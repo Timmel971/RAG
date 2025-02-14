@@ -1,0 +1,33 @@
+deploy.yml
+
+name: Deploy RAG on Hugging Face
+
+on:
+  push:
+    branches:
+      - main  # Starte Action bei Änderungen im "main"-Branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Nutze eine Linux-Umgebung für das Deployment
+    
+    steps:
+      - name: 📥 Repository klonen
+        uses: actions/checkout@v3  # Holt den aktuellen Code von GitHub
+
+      - name: 🏗️ Python installieren
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"  # Stelle sicher, dass die Python-Version stimmt
+
+      - name: 📦 Abhängigkeiten installieren
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Installiert alle benötigten Pakete
+
+      - name: 🔑 OpenAI API-Key setzen
+        run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV  # Speichert API-Key als Umgebungsvariable
+
+      - name: 🚀 Starte Streamlit-App
+        run: |
+          streamlit run RAGneo.py --server.port 8501  # Starte die App
