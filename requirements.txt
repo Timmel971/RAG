@@ -7,5 +7,4 @@ gdown
 requests
 neo4j
 SPARQLWrapper
-tempfile
 hashlib
