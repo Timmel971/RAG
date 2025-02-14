@@ -1,16 +1,14 @@
-deploy.yml
-
-name: Deploy RAG on Hugging Face
+name: Deploy RAG on GitHub Actions
 
 on:
   push:
     branches:
-      - main  # Starte Action bei Änderungen im "main"-Branch
+      - main  # Ändere auf deinen Branch, falls nötig
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Nutze eine Linux-Umgebung für das Deployment
-    
+    runs-on: ubuntu-latest  # Nutzt eine Linux-Umgebung für das Deployment
+
     steps:
       - name: 📥 Repository klonen
         uses: actions/checkout@v3  # Holt den aktuellen Code von GitHub
@@ -18,12 +16,12 @@ jobs:
       - name: 🏗️ Python installieren
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"  # Stelle sicher, dass die Python-Version stimmt
+          python-version: "3.9"  # Stelle sicher, dass die Python-Version passt
 
       - name: 📦 Abhängigkeiten installieren
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # Installiert alle benötigten Pakete
+          pip install -r requirements.txt  # Installiert alle Pakete aus der requirements.txt
 
       - name: 🔑 OpenAI API-Key setzen
         run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV  # Speichert API-Key als Umgebungsvariable
