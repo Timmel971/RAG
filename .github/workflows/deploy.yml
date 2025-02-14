@@ -28,4 +28,4 @@ jobs:
 
       - name: 🚀 Starte Streamlit-App
         run: |
-          streamlit run RAGneo.py --server.port 8501  # Starte die App
+          streamlit run RAGNeo.py --server.port 8501  # Starte die App
