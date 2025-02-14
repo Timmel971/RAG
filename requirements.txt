@@ -1,0 +1,12 @@
+streamlit
+openai
+pandas
+numpy
+PyPDF2
+gdown
+requests
+concurrent.futures
+hashlib
+neo4j
+SPARQLWrapper
+python-dotenv
