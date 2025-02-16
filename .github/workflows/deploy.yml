@@ -1,22 +1,22 @@
-name: Deploy RAG on GitHub Actions
+name: 🚀 Deploy RAG on GitHub Actions
 
 on:
   push:
     branches:
-      - main  # Ändere auf deinen Branch, falls nötig
+      - main  # Falls du einen anderen Branch nutzt, passe ihn hier an
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Nutzt eine Linux-Umgebung für das Deployment
+    runs-on: ubuntu-latest  # Nutzt eine Ubuntu-Umgebung für das Deployment
 
     steps:
       - name: 📥 Repository klonen
-        uses: actions/checkout@v3  # Holt den aktuellen Code von GitHub
+        uses: actions/checkout@v3  # Holt den Code aus GitHub
 
       - name: 🏗️ Python installieren
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"  # Stelle sicher, dass die Python-Version passt
+          python-version: "3.9"  # Stelle sicher, dass deine App mit dieser Version läuft
 
       - name: 📦 Abhängigkeiten installieren
         run: |
@@ -26,6 +26,12 @@ jobs:
       - name: 🔑 OpenAI API-Key setzen
         run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV  # Speichert API-Key als Umgebungsvariable
 
-      - name: 🚀 Starte Streamlit-App
+      - name: 🚀 Starte Streamlit-App im Hintergrund
         run: |
-          streamlit run RAGNeo.py --server.port 8501  # Starte die App
+          nohup streamlit run RAGNeo.py --server.port 8501 --server.address 0.0.0.0 > streamlit.log 2>&1 &
+      
+      - name: 🛑 Warte auf Start der App
+        run: sleep 10  # Warten, damit die App vollständig gestartet wird
+
+      - name: ✅ Streamlit-Status prüfen
+        run: curl -I http://localhost:8501 || echo "❌ Fehler: Streamlit läuft nicht!"
