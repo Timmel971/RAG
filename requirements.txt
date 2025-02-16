@@ -7,3 +7,4 @@ gdown
 requests
 neo4j
 SPARQLWrapper
+pycryptodome
