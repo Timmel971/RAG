@@ -13,13 +13,10 @@ import hashlib
 from io import BytesIO
 from neo4j import GraphDatabase
 from SPARQLWrapper import SPARQLWrapper, JSON
+from openai import OpenAI  # ✅ Korrekte OpenAI-Import
 
-# ✅ OpenAI API-Schlüssel sicher setzen
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    st.error("❌ Kein OpenAI API Key gefunden! Bitte setze `OPENAI_API_KEY` als GitHub Secret.")
-else:
-    client = openai.OpenAI(api_key=OPENAI_API_KEY)
+# ✅ OpenAI API-Schlüssel setzen über GitHub Secrets
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ✅ Neo4j-Datenbankverbindung
 NEO4J_URI = "bolt://localhost:7687"
@@ -31,19 +28,20 @@ driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 GDRIVE_URL = "https://drive.google.com/drive/folders/1mln0vjJv3u4hL1mJwJWX_YT6DSP_5cHC?usp=drive_link"
 DOWNLOAD_PATH = tempfile.mkdtemp()
 
-# ✅ Caching für Embeddings
+# ✅ Caching für Embeddings (verhindert doppelte API-Calls)
 embedding_cache = {}
 
-# ✅ Google Drive Dateien herunterladen
+# ✅ Funktion zum Herunterladen von Google Drive-Dateien
 def download_drive_folder(output_path):
     try:
         folder_id = GDRIVE_URL.split('/')[-1]
         gdown.download_folder(id=folder_id, output=output_path, quiet=False)
-        print(f"✅ Google Drive-Daten erfolgreich nach {output_path} geladen!")
+        print(f"✅ Google Drive-Daten wurden erfolgreich nach {output_path} heruntergeladen!")
     except Exception as e:
-        print(f"❌ Fehler beim Herunterladen: {e}\n🔹 Falls `gdown` fehlt: pip install gdown")
+        print(f"❌ Fehler beim Herunterladen: {e}")
+        print("🔹 Falls gdown fehlt, installiere es mit: pip install gdown")
 
-# ✅ PDFs auslesen
+# ✅ Funktion zum Einlesen von PDFs
 def read_folder_data(folder_path):
     files_data = []
     for file_name in os.listdir(folder_path):
@@ -57,7 +55,7 @@ def read_folder_data(folder_path):
             files_data.append(" ".join(pdf_text))
     return files_data
 
-# ✅ Text in kleinere Chunks unterteilen
+# ✅ Funktion zum Erstellen von Text-Chunks (Kleinere Größe = Schnellere Embeddings)
 def split_text(text, max_length=500):
     words = text.split()
     chunks = []
@@ -74,7 +72,7 @@ def split_text(text, max_length=500):
         chunks.append(" ".join(current_chunk))
     return chunks
 
-# ✅ OpenAI Embeddings mit neuer API nutzen
+# ✅ OpenAI Embedding-Funktion mit neuer API-Syntax
 def get_embedding(text, model="text-embedding-3-small"):
     text_hash = hashlib.md5(text.encode()).hexdigest()
     if text_hash in embedding_cache:
@@ -84,12 +82,12 @@ def get_embedding(text, model="text-embedding-3-small"):
         model=model,
         input=[text]
     )
-
-    embedding = np.array(response.data[0].embedding)
+    
+    embedding = np.array(response.data[0].embedding)  # ✅ NEUE SYNTAX
     embedding_cache[text_hash] = embedding
     return embedding
 
-# ✅ Parallele Embedding-Erzeugung (Multithreading)
+# ✅ Multithreading für Embeddings (Schneller als normale Schleife)
 def create_embeddings_parallel(documents, max_length=500):
     chunk_embeddings = []
     with concurrent.futures.ThreadPoolExecutor() as executor:
@@ -109,11 +107,7 @@ def create_embeddings_parallel(documents, max_length=500):
 
     return chunk_embeddings
 
-# ✅ Kosinus-Ähnlichkeit berechnen
-def cosine_similarity(a, b):
-    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-
-# ✅ Relevante Chunks für die Frage abrufen
+# ✅ Relevante Chunks anhand von Embeddings abrufen
 def retrieve_relevant_chunks(query, chunk_embeddings, top_n=3):
     query_emb = get_embedding(query)
     similarities = [(chunk, cosine_similarity(query_emb, emb)) for chunk, emb in chunk_embeddings]
@@ -123,20 +117,24 @@ def retrieve_relevant_chunks(query, chunk_embeddings, top_n=3):
     
     return "\n\n".join(top_chunks)
 
-# ✅ OpenAI GPT-3.5-Turbo zur Antwortgenerierung
+# ✅ Kosinus-Ähnlichkeit berechnen
+def cosine_similarity(a, b):
+    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+
+# ✅ OpenAI GPT-3.5-Turbo für Antworten nutzen
 def generate_response(context, user_query):
     messages = [
         {"role": "system", "content": "Antwort basierend auf Geschäftsberichten & Neo4j-Daten."},
         {"role": "user", "content": f"Context: {context}\nUser Question: {user_query}"}
     ]
     
-    response = client.chat.completions.create(
+    response = client.chat.completions.create(  # ✅ NEUE SYNTAX
         model="gpt-3.5-turbo",
         messages=messages,
         max_tokens=700
     )
     
-    return response.choices[0].message.content.strip()
+    return response.choices[0].message.content.strip()  # ✅ NEUE SYNTAX
 
 # ✅ Haupt-Streamlit-UI
 def main():
