@@ -15,8 +15,15 @@ from neo4j import GraphDatabase
 from SPARQLWrapper import SPARQLWrapper, JSON
 from openai import OpenAI  # ✅ Korrekte OpenAI-Import
 
-# ✅ OpenAI API-Schlüssel setzen über GitHub Secrets
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# API-Key aus Streamlit Secrets laden
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+
+# Prüfe, ob der API-Key korrekt geladen wurde
+if not openai_api_key:
+    raise ValueError("❌ OPENAI_API_KEY ist nicht in den Streamlit Secrets gesetzt!")
+
+# OpenAI-Client mit dem Secret-API-Key erstellen
+client = openai.OpenAI(api_key=openai_api_key)
 
 # ✅ Neo4j-Datenbankverbindung
 NEO4J_URI = "bolt://localhost:7687"
