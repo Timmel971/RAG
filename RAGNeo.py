@@ -15,7 +15,7 @@ from neo4j import GraphDatabase
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 # ✅ OpenAI API-Schlüssel sicher setzen
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     st.error("❌ Kein OpenAI API Key gefunden! Bitte setze `OPENAI_API_KEY` als GitHub Secret.")
 else:
