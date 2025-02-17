@@ -146,30 +146,7 @@ def generate_response(context, user_query):
 
 # ✅ Haupt-Streamlit-UI
 def main():
-    st.markdown("### 📌 Fragen Sie zu Siemens & Geschäftsberichten!")
-
-    # 📌 Siemens-Datenbank mit Neo4j synchronisieren
-    if st.button("🔄 Siemens-Daten aus Wikidata abrufen"):
-        sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
-        sparql.setQuery("""
-            SELECT ?tochter ?tochterLabel WHERE {
-              ?tochter wdt:P749 wd:Q46856.
-              SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de". }
-            }
-        """)
-        sparql.setReturnFormat(JSON)
-        results = sparql.query().convert()
-        subsidiaries = [result["tochterLabel"]["value"] for result in results["results"]["bindings"]]
-        
-        with driver.session() as session:
-            for name in subsidiaries:
-                session.run("""
-                    MERGE (t:Unternehmen {name: $name})
-                    MERGE (s:Unternehmen {name: 'Siemens AG'})
-                    MERGE (t)-[:IST_TOCHTER_VON]->(s)
-                """, name=name)
-
-        st.success(f"{len(subsidiaries)} Tochtergesellschaften wurden in Neo4j gespeichert!")
+    st.markdown("### 📌 Hallo, hier ist Neo und ich bin Ihr persönlicher Assistent rund um das Unternehmen der Siemens AG!")
 
     # 📌 Lade Google Drive-Dokumente
     if "documents" not in st.session_state:
