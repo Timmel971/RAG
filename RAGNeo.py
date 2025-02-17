@@ -26,13 +26,14 @@ if not openai_api_key:
 client = openai.OpenAI(api_key=openai_api_key)
 
 # ✅ Neo4j-Datenbankverbindung
-NEO4J_URI = "bolt://localhost:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "timmelpanthers"
+NEO4J_URI = st.secrets["NEO4J_URI"]
+NEO4J_USER = st.secrets["NEO4J_USER"]
+NEO4J_PASSWORD = st.secrets["NEO4J_PASSWORD"]
+
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
 # ✅ Google Drive-Ordner-Link
-GDRIVE_URL = "https://drive.google.com/drive/folders/1mln0vjJv3u4hL1mJwJWX_YT6DSP_5cHC?usp=drive_link"
+GDRIVE_URL = st.secrets["GDRIVE_URL"]
 DOWNLOAD_PATH = tempfile.mkdtemp()
 
 # ✅ Caching für Embeddings (verhindert doppelte API-Calls)
