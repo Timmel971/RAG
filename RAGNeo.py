@@ -48,8 +48,8 @@ def download_drive_folder(output_path):
     except Exception as e:
         print(f"❌ Fehler beim Herunterladen: {e}")
         print("🔹 Falls gdown fehlt, installiere es mit: pip install gdown")
-
-# ✅ Funktion zum Einlesen von PDFs
+        
+# Funktion zum Einlesen von PDFs
 def read_folder_data(folder_path):
     files_data = []
     for file_name in os.listdir(folder_path):
@@ -63,7 +63,7 @@ def read_folder_data(folder_path):
             files_data.append(" ".join(pdf_text))
     return files_data
 
-# ✅ Funktion zum Erstellen von Text-Chunks (Kleinere Größe = Schnellere Embeddings)
+# Funktion zum Erstellen von Text-Chunks (kleinere Chunks = schnellere Embeddings)
 def split_text(text, max_length=500):
     words = text.split()
     chunks = []
@@ -80,7 +80,7 @@ def split_text(text, max_length=500):
         chunks.append(" ".join(current_chunk))
     return chunks
 
-# ✅ OpenAI Embedding-Funktion mit neuer API-Syntax
+# OpenAI Embedding-Funktion
 def get_embedding(text, model="text-embedding-3-small"):
     text_hash = hashlib.md5(text.encode()).hexdigest()
     if text_hash in embedding_cache:
@@ -91,15 +91,16 @@ def get_embedding(text, model="text-embedding-3-small"):
         input=[text]
     )
     
-    embedding = np.array(response.data[0].embedding)  # ✅ NEUE SYNTAX
+    embedding = np.array(response.data[0].embedding)
     embedding_cache[text_hash] = embedding
     return embedding
 
-# ✅ Multithreading für Embeddings (Schneller als normale Schleife)
+# Multithreading für Embeddings
 def create_embeddings_parallel(documents, max_length=500):
     chunk_embeddings = []
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        future_to_chunk = {executor.submit(get_embedding, chunk): chunk for doc in documents for chunk in split_text(doc, max_length)}
+        future_to_chunk = {executor.submit(get_embedding, chunk): chunk 
+                           for doc in documents for chunk in split_text(doc, max_length)}
         
         progress_bar = st.progress(0)
         total_chunks = len(future_to_chunk)
@@ -115,40 +116,52 @@ def create_embeddings_parallel(documents, max_length=500):
 
     return chunk_embeddings
 
-# ✅ Relevante Chunks anhand von Embeddings abrufen
-def retrieve_relevant_chunks(query, chunk_embeddings, top_n=3):
-    query_emb = get_embedding(query)
-    similarities = [(chunk, cosine_similarity(query_emb, emb)) for chunk, emb in chunk_embeddings]
-    
-    similarities.sort(key=lambda x: x[1], reverse=True)
-    top_chunks = [chunk for chunk, sim in similarities[:top_n]]
-    
-    return "\n\n".join(top_chunks)
-
-# ✅ Kosinus-Ähnlichkeit berechnen
+# Kosinus-Ähnlichkeit berechnen
 def cosine_similarity(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
-# ✅ OpenAI GPT-3.5-Turbo für Antworten nutzen
+# Relevante Chunks anhand von Embeddings abrufen
+def retrieve_relevant_chunks(query, chunk_embeddings, top_n=3):
+    query_emb = get_embedding(query)
+    similarities = [(chunk, cosine_similarity(query_emb, emb)) for chunk, emb in chunk_embeddings]
+    similarities.sort(key=lambda x: x[1], reverse=True)
+    top_chunks = [chunk for chunk, sim in similarities[:top_n]]
+    return "\n\n".join(top_chunks)
+
+# Antwort generieren – ausschließlich basierend auf dem übergebenen Kontext
 def generate_response(context, user_query):
     messages = [
-        {"role": "system", "content": "Antwort basierend auf Geschäftsberichten & Neo4j-Daten."},
+        {"role": "system", "content": "Bitte antworte ausschließlich basierend auf den folgenden bereitgestellten Daten. Nutze keine anderen Quellen oder dein Vorwissen. Falls keine passenden Informationen im Kontext vorhanden sind, antworte mit 'Keine ausreichenden Daten gefunden'."},
         {"role": "user", "content": f"Context: {context}\nUser Question: {user_query}"}
     ]
     
-    response = client.chat.completions.create(  # ✅ NEUE SYNTAX
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=messages,
-        max_tokens=700
+        max_tokens=700,
+        temperature=0  # Niedrige Temperatur reduziert Halluzinationen
     )
     
-    return response.choices[0].message.content.strip()  # ✅ NEUE SYNTAX
+    return response.choices[0].message.content.strip()
 
-# ✅ Haupt-Streamlit-UI
+# Funktion, um Kontext aus der Neo4j-Datenbank abzurufen
+def get_neo4j_context():
+    with driver.session() as session:
+        result = session.run("""
+            MATCH (s:Unternehmen)<-[r:IST_TOCHTER_VON]-(t:Unternehmen)
+            RETURN s.name AS Mutter, t.name AS Tochter
+            LIMIT 25
+        """)
+        context_lines = []
+        for record in result:
+            context_lines.append(f"{record['Tochter']} ist ein Tochterunternehmen von {record['Mutter']}.")
+        return "\n".join(context_lines)
+
+# Haupt-Streamlit-UI
 def main():
-    st.markdown("### 📌 Hallo, hier ist Neo und ich bin Ihr persönlicher Assistent rund um das Unternehmen der Siemens AG!")
+    st.markdown("### 📌 Hallo, hier ist Neo – Ihr persönlicher Assistent rund um das Unternehmen der Siemens AG!")
 
-    # 📌 Lade Google Drive-Dokumente
+    # Lade Google Drive-Dokumente
     if "documents" not in st.session_state:
         try:
             st.info("📂 Lade Geschäftsberichte aus Google Drive...")
@@ -157,20 +170,25 @@ def main():
         except Exception as e:
             st.error(f"❌ Fehler beim Laden der Daten: {e}")
 
-    # 📌 Erstelle Embeddings mit Fortschrittsanzeige
+    # Erstelle Embeddings für die Dokumente
     if "chunk_embeddings" not in st.session_state:
         with st.spinner("🔍 Erzeuge Embeddings für Dokumente..."):
             st.session_state.chunk_embeddings = create_embeddings_parallel(st.session_state.documents, max_length=500)
 
-    # 📌 Chat-Funktion
+    # Chat-Funktion
     user_query = st.text_input("❓ Ihre Frage:")
     send = st.button("Senden")
 
     if send and user_query:
         with st.spinner("🔍 Generiere Antwort..."):
-            response = retrieve_relevant_chunks(user_query, st.session_state.chunk_embeddings, top_n=3)
-            st.markdown(f"### 📌 Antwort:\n{generate_response(response, user_query)}")
+            # Abruf des Kontextes aus der Neo4j-Datenbank
+            neo4j_context = get_neo4j_context()
+            # Abruf des relevanten Kontextes aus den Dokumenten
+            document_context = retrieve_relevant_chunks(user_query, st.session_state.chunk_embeddings, top_n=3)
+            # Kombiniere beide Kontexte
+            full_context = f"Neo4j-Daten:\n{neo4j_context}\n\nDokument-Daten:\n{document_context}"
+            answer = generate_response(full_context, user_query)
+            st.markdown(f"### 📌 Antwort:\n{answer}")
 
-# ✅ Streamlit starten
 if __name__ == "__main__":
     main()
