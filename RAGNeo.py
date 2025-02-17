@@ -13,7 +13,7 @@ import hashlib
 from io import BytesIO
 from neo4j import GraphDatabase
 from SPARQLWrapper import SPARQLWrapper, JSON
-from openai import OpenAI  # ✅ Korrekte OpenAI-Import
+from openai import OpenAI 
 
 # API-Key aus Streamlit Secrets laden
 openai_api_key = st.secrets["OPENAI_API_KEY"]
