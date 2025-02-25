@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .  # ✅ XSD-Präfix hinzugefügt
 
 ex:Acuson_GmbH a ex:Company ;
-    ex:name "Acuson%20GmbH" ;
+    ex:name "Acuson 20GmbH" ;
     ex:type "Tochterunternehmen" ;
     ex:country "Deutschland" ;
     ex:city "Erlangen " .
