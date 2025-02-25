@@ -7,7 +7,7 @@ ex:Acuson_GmbH a ex:Company ;
     ex:name "Acuson 20GmbH" ;
     ex:type "Tochterunternehmen" ;
     ex:country "Deutschland" ;
-    ex:city "Erlangen " .
+    ex:city "Erlangen" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Acuson_GmbH ;
     ex:ownership "100"^^xsd:integer .
@@ -16,7 +16,7 @@ ex:Airport_Munich_Logistics_and_Services_GmbH a ex:Company ;
     ex:name "Airport Munich Logistics and Services GmbH" ;
     ex:type "Tochterunternehmen" ;
     ex:country "Deutschland" ;
-    ex:city "Hallbergmoos " .
+    ex:city "Hallbergmoos" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Airport_Munich_Logistics_and_Services_GmbH ;
     ex:ownership "100"^^xsd:integer .
