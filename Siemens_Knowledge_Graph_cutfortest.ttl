@@ -6,7 +6,7 @@
 ex:Acuson_GmbH a ex:Company ;
     ex:name "Acuson GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Erlangen " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Acuson_GmbH ;
@@ -15,7 +15,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Acuson_GmbH ;
 ex:Airport_Munich_Logistics_and_Services_GmbH a ex:Company ;
     ex:name "Airport Munich Logistics and Services GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Hallbergmoos " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Airport_Munich_Logistics_and_Services_GmbH ;
@@ -24,7 +24,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Airport_Munich_Logistics_and_Services_GmbH ;
 ex:AIT_Applied_Information_Technologies_GmbH_und_Co._KG a ex:Company ;
     ex:name "AIT Applied Information Technologies GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Stuttgart " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:AIT_Applied_Information_Technologies_GmbH_und_Co._KG ;
@@ -33,7 +33,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:AIT_Applied_Information_Technologies_GmbH_und_
 ex:AIT_Verwaltungs-GmbH a ex:Company ;
     ex:name "AIT Verwaltungs-GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Stuttgart " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:AIT_Verwaltungs-GmbH ;
@@ -42,7 +42,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:AIT_Verwaltungs-GmbH ;
 ex:Alpha_Verteilertechnik_GmbH a ex:Company ;
     ex:name "Alpha Verteilertechnik GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Cham " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Alpha_Verteilertechnik_GmbH ;
@@ -51,7 +51,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Alpha_Verteilertechnik_GmbH ;
 ex:BEFUND24_GmbH a ex:Company ;
     ex:name "BEFUND24 GmbH" ;
     ex:type "Gemeinschaftsunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Erlangen " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:BEFUND24_GmbH ;
@@ -60,7 +60,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:BEFUND24_GmbH ;
 ex:Berliner_Vermögensverwaltung_GmbH a ex:Company ;
     ex:name "Berliner Vermögensverwaltung GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Berlin " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Berliner_Vermögensverwaltung_GmbH ;
@@ -69,7 +69,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Berliner_Vermögensverwaltung_GmbH ;
 ex:Capta_Grundstücks-Verwaltungsgesellschaft_mbH a ex:Company ;
     ex:name "Capta Grundstücks-Verwaltungsgesellschaft mbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Capta_Grundstücks-Verwaltungsgesellschaft_mbH ;
@@ -78,7 +78,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Capta_Grundstücks-Verwaltungsgesellschaft_mbH
 ex:Dade_Behring_Grundstücks_GmbH a ex:Company ;
     ex:name "Dade Behring Grundstücks GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Dade_Behring_Grundstücks_GmbH ;
@@ -87,7 +87,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Dade_Behring_Grundstücks_GmbH ;
 ex:eos.uptrade_GmbH a ex:Company ;
     ex:name "eos.uptrade GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Hamburg " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:eos.uptrade_GmbH ;
@@ -96,7 +96,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:eos.uptrade_GmbH ;
 ex:evosoft_GmbH a ex:Company ;
     ex:name "evosoft GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Nürnberg " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:evosoft_GmbH ;
@@ -105,7 +105,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:evosoft_GmbH ;
 ex:Geisenhausener_Entwicklungs_Management_GmbH a ex:Company ;
     ex:name "Geisenhausener Entwicklungs Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Geisenhausener_Entwicklungs_Management_GmbH ;
@@ -114,7 +114,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Geisenhausener_Entwicklungs_Management_GmbH ;
 ex:Geisenhausener_Entwicklungs-GmbH_und_Co._KG a ex:Company ;
     ex:name "Geisenhausener Entwicklungs-GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Geisenhausener_Entwicklungs-GmbH_und_Co._KG ;
@@ -123,7 +123,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Geisenhausener_Entwicklungs-GmbH_und_Co._KG ;
 ex:HaCon_Ingenieurgesellschaft_mbH a ex:Company ;
     ex:name "HaCon Ingenieurgesellschaft mbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Hannover " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:HaCon_Ingenieurgesellschaft_mbH ;
@@ -132,7 +132,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:HaCon_Ingenieurgesellschaft_mbH ;
 ex:Heliox_Leistungselektronik_GmbH a ex:Company ;
     ex:name "Heliox Leistungselektronik GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Dortmund " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Heliox_Leistungselektronik_GmbH ;
@@ -141,7 +141,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Heliox_Leistungselektronik_GmbH ;
 ex:ILLIT_Grundstücksverwaltungs-Management_GmbH a ex:Company ;
     ex:name "ILLIT Grundstücksverwaltungs-Management GmbH" ;
     ex:type "Gemeinschaftsunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:ILLIT_Grundstücksverwaltungs-Management_GmbH ;
@@ -150,7 +150,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:ILLIT_Grundstücksverwaltungs-Management_GmbH 
 ex:Innomotics_Beteiligungs-GmbH a ex:Company ;
     ex:name "Innomotics Beteiligungs-GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Innomotics_Beteiligungs-GmbH ;
@@ -159,7 +159,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Innomotics_Beteiligungs-GmbH ;
 ex:Innomotics_GmbH a ex:Company ;
     ex:name "Innomotics GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Innomotics_GmbH ;
@@ -168,7 +168,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Innomotics_GmbH ;
 ex:Innomotics_Real_Estate_GmbH_und_Co._KG a ex:Company ;
     ex:name "Innomotics Real Estate GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Nürnberg " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Innomotics_Real_Estate_GmbH_und_Co._KG ;
@@ -177,7 +177,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Innomotics_Real_Estate_GmbH_und_Co._KG ;
 ex:IPGD_Grundstücksverwaltungs-Gesellschaft_mbH a ex:Company ;
     ex:name "IPGD Grundstücksverwaltungs-Gesellschaft mbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:IPGD_Grundstücksverwaltungs-Gesellschaft_mbH ;
@@ -186,7 +186,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:IPGD_Grundstücksverwaltungs-Gesellschaft_mbH 
 ex:KACO_new_energy_GmbH a ex:Company ;
     ex:name "KACO new energy GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Neckarsulm " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:KACO_new_energy_GmbH ;
@@ -195,7 +195,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:KACO_new_energy_GmbH ;
 ex:Khnoton_I_GmbH a ex:Company ;
     ex:name "Khnoton I GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Khnoton_I_GmbH ;
@@ -204,7 +204,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Khnoton_I_GmbH ;
 ex:KompTime_GmbH a ex:Company ;
     ex:name "KompTime GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:KompTime_GmbH ;
@@ -213,7 +213,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:KompTime_GmbH ;
 ex:Kyros_54_GmbH a ex:Company ;
     ex:name "Kyros 54 GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Kyros_54_GmbH ;
@@ -222,7 +222,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Kyros_54_GmbH ;
 ex:Kyros_58_GmbH a ex:Company ;
     ex:name "Kyros 58 GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Kyros_58_GmbH ;
@@ -231,7 +231,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Kyros_58_GmbH ;
 ex:Kyros_68_GmbH a ex:Company ;
     ex:name "Kyros 68 GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Kyros_68_GmbH ;
@@ -240,7 +240,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Kyros_68_GmbH ;
 ex:Kyros_71_GmbH a ex:Company ;
     ex:name "Kyros 71 GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Kyros_71_GmbH ;
@@ -249,7 +249,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Kyros_71_GmbH ;
 ex:Kyros_72_GmbH a ex:Company ;
     ex:name "Kyros 72 GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Kyros_72_GmbH ;
@@ -258,7 +258,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Kyros_72_GmbH ;
 ex:Kyros_B_AG a ex:Company ;
     ex:name "Kyros B AG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Kyros_B_AG ;
@@ -267,7 +267,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Kyros_B_AG ;
 ex:Kyros_C_AG a ex:Company ;
     ex:name "Kyros C AG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Kyros_C_AG ;
@@ -276,7 +276,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Kyros_C_AG ;
 ex:Moorenbrunn_Entwicklungs_Management_GmbH a ex:Company ;
     ex:name "Moorenbrunn Entwicklungs Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Moorenbrunn_Entwicklungs_Management_GmbH ;
@@ -285,7 +285,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Moorenbrunn_Entwicklungs_Management_GmbH ;
 ex:Moorenbrunn_Entwicklungs-GmbH_und_Co._KG a ex:Company ;
     ex:name "Moorenbrunn Entwicklungs-GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Moorenbrunn_Entwicklungs-GmbH_und_Co._KG ;
@@ -294,7 +294,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Moorenbrunn_Entwicklungs-GmbH_und_Co._KG ;
 ex:Next47_GmbH a ex:Company ;
     ex:name "Next47 GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Next47_GmbH ;
@@ -303,7 +303,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Next47_GmbH ;
 ex:Next47_Services_GmbH a ex:Company ;
     ex:name "Next47 Services GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Next47_Services_GmbH ;
@@ -312,7 +312,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Next47_Services_GmbH ;
 ex:OPTIO_Grundstücks-Vermietungsgesellschaft_mbH_und_Co._Objekt_Tübingen_KG a ex:Company ;
     ex:name "OPTIO Grundstücks-Vermietungsgesellschaft mbH & Co. Objekt Tübingen KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:OPTIO_Grundstücks-Vermietungsgesellschaft_mbH_und_Co._Objekt_Tübingen_KG ;
@@ -321,7 +321,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:OPTIO_Grundstücks-Vermietungsgesellschaft_mbH
 ex:REMECH_Systemtechnik_GmbH a ex:Company ;
     ex:name "REMECH Systemtechnik GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Unterwellenborn " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:REMECH_Systemtechnik_GmbH ;
@@ -330,7 +330,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:REMECH_Systemtechnik_GmbH ;
 ex:RISICOM_Rückversicherung_AG a ex:Company ;
     ex:name "RISICOM Rückversicherung AG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:RISICOM_Rückversicherung_AG ;
@@ -339,7 +339,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:RISICOM_Rückversicherung_AG ;
 ex:Siemens_Advanta_Solutions_GmbH a ex:Company ;
     ex:name "Siemens Advanta Solutions GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Advanta_Solutions_GmbH ;
@@ -348,7 +348,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Advanta_Solutions_GmbH ;
 ex:Siemens_Bank_GmbH a ex:Company ;
     ex:name "Siemens Bank GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Bank_GmbH ;
@@ -357,7 +357,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Bank_GmbH ;
 ex:Siemens_Beteiligungen_Europa_GmbH a ex:Company ;
     ex:name "Siemens Beteiligungen Europa GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_Europa_GmbH ;
@@ -366,7 +366,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_Europa_GmbH ;
 ex:Siemens_Beteiligungen_Inland_GmbH a ex:Company ;
     ex:name "Siemens Beteiligungen Inland GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_Inland_GmbH ;
@@ -375,7 +375,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_Inland_GmbH ;
 ex:Siemens_Beteiligungen_Management_GmbH a ex:Company ;
     ex:name "Siemens Beteiligungen Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_Management_GmbH ;
@@ -384,7 +384,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_Management_GmbH ;
 ex:Siemens_Beteiligungen_USA_GmbH a ex:Company ;
     ex:name "Siemens Beteiligungen USA GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Berlin " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_USA_GmbH ;
@@ -393,7 +393,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungen_USA_GmbH ;
 ex:Siemens_Beteiligungsverwaltung_GmbH_und_Co._OHG a ex:Company ;
     ex:name "Siemens Beteiligungsverwaltung GmbH & Co. OHG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungsverwaltung_GmbH_und_Co._OHG ;
@@ -402,7 +402,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Beteiligungsverwaltung_GmbH_und_Co._OH
 ex:Siemens_Campus_Erlangen_Grundstücks-GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Campus Erlangen Grundstücks-GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Grundstücks-GmbH_und_Co._KG ;
@@ -411,7 +411,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Grundstücks-GmbH_und_
 ex:Siemens_Campus_Erlangen_Objekt_3_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Campus Erlangen Objekt 3 GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_3_GmbH_und_Co._KG ;
@@ -420,7 +420,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_3_GmbH_und_Co._
 ex:Siemens_Campus_Erlangen_Objekt_4_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Campus Erlangen Objekt 4 GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_4_GmbH_und_Co._KG ;
@@ -429,7 +429,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_4_GmbH_und_Co._
 ex:Siemens_Campus_Erlangen_Objekt_5_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Campus Erlangen Objekt 5 GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_5_GmbH_und_Co._KG ;
@@ -438,7 +438,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_5_GmbH_und_Co._
 ex:Siemens_Campus_Erlangen_Objekt_6_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Campus Erlangen Objekt 6 GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_6_GmbH_und_Co._KG ;
@@ -447,7 +447,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_6_GmbH_und_Co._
 ex:Siemens_Campus_Erlangen_Objekt_7_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Campus Erlangen Objekt 7 GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_7_GmbH_und_Co._KG ;
@@ -456,7 +456,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objekt_7_GmbH_und_Co._
 ex:Siemens_Campus_Erlangen_Objektmanagement_GmbH a ex:Company ;
     ex:name "Siemens Campus Erlangen Objektmanagement GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objektmanagement_GmbH ;
@@ -465,7 +465,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Objektmanagement_GmbH 
 ex:Siemens_Campus_Erlangen_Verwaltungs-GmbH a ex:Company ;
     ex:name "Siemens Campus Erlangen Verwaltungs-GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Verwaltungs-GmbH ;
@@ -474,7 +474,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Campus_Erlangen_Verwaltungs-GmbH ;
 ex:Siemens_Digital_Business_Builder_GmbH a ex:Company ;
     ex:name "Siemens Digital Business Builder GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Digital_Business_Builder_GmbH ;
@@ -483,7 +483,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Digital_Business_Builder_GmbH ;
 ex:Siemens_Digital_Logistics_GmbH a ex:Company ;
     ex:name "Siemens Digital Logistics GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Frankenthal " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Digital_Logistics_GmbH ;
@@ -492,7 +492,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Digital_Logistics_GmbH ;
 ex:Siemens_Electronic_Design_Automation_GmbH a ex:Company ;
     ex:name "Siemens Electronic Design Automation GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Electronic_Design_Automation_GmbH ;
@@ -501,7 +501,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Electronic_Design_Automation_GmbH ;
 ex:Siemens_Finance_und_Leasing_GmbH a ex:Company ;
     ex:name "Siemens Finance & Leasing GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Finance_und_Leasing_GmbH ;
@@ -510,7 +510,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Finance_und_Leasing_GmbH ;
 ex:Siemens_Financial_Services_GmbH a ex:Company ;
     ex:name "Siemens Financial Services GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Financial_Services_GmbH ;
@@ -519,7 +519,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Financial_Services_GmbH ;
 ex:Siemens_Fonds_Invest_GmbH a ex:Company ;
     ex:name "Siemens Fonds Invest GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Fonds_Invest_GmbH ;
@@ -528,7 +528,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Fonds_Invest_GmbH ;
 ex:Siemens_Global_Innovation_Partners_Management_GmbH a ex:Company ;
     ex:name "Siemens Global Innovation Partners Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Global_Innovation_Partners_Management_GmbH ;
@@ -537,7 +537,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Global_Innovation_Partners_Management_
 ex:Siemens_Healthcare_Diagnostics_Products_GmbH a ex:Company ;
     ex:name "Siemens Healthcare Diagnostics Products GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Marburg " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthcare_Diagnostics_Products_GmbH ;
@@ -546,7 +546,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthcare_Diagnostics_Products_GmbH ;
 ex:Siemens_Healthcare_GmbH a ex:Company ;
     ex:name "Siemens Healthcare GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthcare_GmbH ;
@@ -555,7 +555,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthcare_GmbH ;
 ex:Siemens_Healthineers_AG a ex:Company ;
     ex:name "Siemens Healthineers AG" ;
     ex:type "Gemeinschaftsunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_AG ;
@@ -564,7 +564,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_AG ;
 ex:Siemens_Healthineers_Beteiligungen_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Healthineers Beteiligungen GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Röttenbach " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Beteiligungen_GmbH_und_Co._KG ;
@@ -573,7 +573,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Beteiligungen_GmbH_und_Co
 ex:Siemens_Healthineers_Beteiligungen_Verwaltungs-GmbH a ex:Company ;
     ex:name "Siemens Healthineers Beteiligungen Verwaltungs-GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Röttenbach " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Beteiligungen_Verwaltungs-GmbH ;
@@ -582,7 +582,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Beteiligungen_Verwaltungs
 ex:Siemens_Healthineers_Holding_I_GmbH a ex:Company ;
     ex:name "Siemens Healthineers Holding I GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Holding_I_GmbH ;
@@ -591,7 +591,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Holding_I_GmbH ;
 ex:Siemens_Healthineers_Holding_III_GmbH a ex:Company ;
     ex:name "Siemens Healthineers Holding III GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Holding_III_GmbH ;
@@ -600,7 +600,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Holding_III_GmbH ;
 ex:Siemens_Healthineers_Innovation_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Healthineers Innovation GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Röttenbach " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Innovation_GmbH_und_Co._KG ;
@@ -609,7 +609,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Innovation_GmbH_und_Co._K
 ex:Siemens_Healthineers_Innovation_Verwaltungs-GmbH a ex:Company ;
     ex:name "Siemens Healthineers Innovation Verwaltungs-GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Röttenbach " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Innovation_Verwaltungs-GmbH ;
@@ -618,7 +618,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Healthineers_Innovation_Verwaltungs-Gm
 ex:Siemens_Immobilien_Besitz_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Immobilien Besitz GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Immobilien_Besitz_GmbH_und_Co._KG ;
@@ -627,7 +627,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Immobilien_Besitz_GmbH_und_Co._KG ;
 ex:Siemens_Immobilien_Management_GmbH a ex:Company ;
     ex:name "Siemens Immobilien Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Immobilien_Management_GmbH ;
@@ -636,7 +636,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Immobilien_Management_GmbH ;
 ex:Siemens_Industriepark_Karlsruhe_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Industriepark Karlsruhe GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Industriepark_Karlsruhe_GmbH_und_Co._KG ;
@@ -645,7 +645,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Industriepark_Karlsruhe_GmbH_und_Co._K
 ex:Siemens_Industry_Software_GmbH a ex:Company ;
     ex:name "Siemens Industry Software GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Köln " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Industry_Software_GmbH ;
@@ -654,7 +654,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Industry_Software_GmbH ;
 ex:Siemens_Liquidity_One a ex:Company ;
     ex:name "Siemens Liquidity One" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Liquidity_One ;
@@ -663,7 +663,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Liquidity_One ;
 ex:Siemens_Logistics_GmbH a ex:Company ;
     ex:name "Siemens Logistics GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Nürnberg " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Logistics_GmbH ;
@@ -672,7 +672,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Logistics_GmbH ;
 ex:Siemens_Middle_East_Services_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Middle East Services GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Middle_East_Services_GmbH_und_Co._KG ;
@@ -681,7 +681,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Middle_East_Services_GmbH_und_Co._KG ;
 ex:Siemens_Middle_East_Services_LP_GmbH a ex:Company ;
     ex:name "Siemens Middle East Services LP GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Middle_East_Services_LP_GmbH ;
@@ -690,7 +690,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Middle_East_Services_LP_GmbH ;
 ex:Siemens_Mobility_GmbH a ex:Company ;
     ex:name "Siemens Mobility GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Mobility_GmbH ;
@@ -699,7 +699,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Mobility_GmbH ;
 ex:Siemens_Mobility_Real_Estate_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Mobility Real Estate GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Mobility_Real_Estate_GmbH_und_Co._KG ;
@@ -708,7 +708,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Mobility_Real_Estate_GmbH_und_Co._KG ;
 ex:Siemens_Mobility_Real_Estate_Management_GmbH a ex:Company ;
     ex:name "Siemens Mobility Real Estate Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Mobility_Real_Estate_Management_GmbH ;
@@ -717,7 +717,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Mobility_Real_Estate_Management_GmbH ;
 ex:Siemens_Nixdorf_Informationssysteme_GmbH a ex:Company ;
     ex:name "Siemens Nixdorf Informationssysteme GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Nixdorf_Informationssysteme_GmbH ;
@@ -726,7 +726,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Nixdorf_Informationssysteme_GmbH ;
 ex:Siemens_OfficeCenter_Verwaltungs_GmbH a ex:Company ;
     ex:name "Siemens OfficeCenter Verwaltungs GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_OfficeCenter_Verwaltungs_GmbH ;
@@ -735,7 +735,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_OfficeCenter_Verwaltungs_GmbH ;
 ex:Siemens_Private_Finance_Versicherungsvermittlungsgesellschaft_mbH a ex:Company ;
     ex:name "Siemens Private Finance Versicherungsvermittlungsgesellschaft mbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Private_Finance_Versicherungsvermittlungsgesellschaft_mbH ;
@@ -744,7 +744,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Private_Finance_Versicherungsvermittlu
 ex:Siemens_Project_Ventures_GmbH a ex:Company ;
     ex:name "Siemens Project Ventures GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Erlangen " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Project_Ventures_GmbH ;
@@ -753,7 +753,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Project_Ventures_GmbH ;
 ex:Siemens_Real_Estate_Consulting_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Real Estate Consulting GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_Consulting_GmbH_und_Co._KG ;
@@ -762,7 +762,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_Consulting_GmbH_und_Co._KG
 ex:Siemens_Real_Estate_Consulting_Management_GmbH a ex:Company ;
     ex:name "Siemens Real Estate Consulting Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_Consulting_Management_GmbH ;
@@ -771,7 +771,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_Consulting_Management_GmbH
 ex:Siemens_Real_Estate_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Real Estate GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_GmbH_und_Co._KG ;
@@ -780,7 +780,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_GmbH_und_Co._KG ;
 ex:Siemens_Real_Estate_Management_GmbH a ex:Company ;
     ex:name "Siemens Real Estate Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_Management_GmbH ;
@@ -789,7 +789,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Real_Estate_Management_GmbH ;
 ex:Siemens_Technology_Accelerator_GmbH a ex:Company ;
     ex:name "Siemens Technology Accelerator GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Technology_Accelerator_GmbH ;
@@ -798,7 +798,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Technology_Accelerator_GmbH ;
 ex:Siemens_Technopark_Nürnberg_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Technopark Nürnberg GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Technopark_Nürnberg_GmbH_und_Co._KG ;
@@ -807,7 +807,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Technopark_Nürnberg_GmbH_und_Co._KG ;
 ex:Siemens_Traction_Gears_GmbH a ex:Company ;
     ex:name "Siemens Traction Gears GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Penig " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Traction_Gears_GmbH ;
@@ -816,7 +816,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Traction_Gears_GmbH ;
 ex:Siemens_Trademark_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemens Trademark GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Trademark_GmbH_und_Co._KG ;
@@ -825,7 +825,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Trademark_GmbH_und_Co._KG ;
 ex:Siemens_Trademark_Management_GmbH a ex:Company ;
     ex:name "Siemens Trademark Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Trademark_Management_GmbH ;
@@ -834,7 +834,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Trademark_Management_GmbH ;
 ex:Siemens_Treasury_GmbH a ex:Company ;
     ex:name "Siemens Treasury GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Treasury_GmbH ;
@@ -843,7 +843,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Treasury_GmbH ;
 ex:Siemens-Fonds_C-1 a ex:Company ;
     ex:name "Siemens-Fonds C-1" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_C-1 ;
@@ -852,7 +852,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_C-1 ;
 ex:Siemens-Fonds_Pension_Captive a ex:Company ;
     ex:name "Siemens-Fonds Pension Captive" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_Pension_Captive ;
@@ -861,7 +861,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_Pension_Captive ;
 ex:Siemens-Fonds_S-7 a ex:Company ;
     ex:name "Siemens-Fonds S-7" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_S-7 ;
@@ -870,7 +870,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_S-7 ;
 ex:Siemens-Fonds_S-8 a ex:Company ;
     ex:name "Siemens-Fonds S-8" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_S-8 ;
@@ -879,7 +879,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens-Fonds_S-8 ;
 ex:Siemensstadt_C1_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemensstadt C1 GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_C1_GmbH_und_Co._KG ;
@@ -888,7 +888,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_C1_GmbH_und_Co._KG ;
 ex:Siemensstadt_C1_Verwaltungs_GmbH a ex:Company ;
     ex:name "Siemensstadt C1 Verwaltungs GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_C1_Verwaltungs_GmbH ;
@@ -897,7 +897,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_C1_Verwaltungs_GmbH ;
 ex:Siemensstadt_CX_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemensstadt CX GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_CX_GmbH_und_Co._KG ;
@@ -906,7 +906,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_CX_GmbH_und_Co._KG ;
 ex:Siemensstadt_CX_Verwaltungs_GmbH a ex:Company ;
     ex:name "Siemensstadt CX Verwaltungs GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_CX_Verwaltungs_GmbH ;
@@ -915,7 +915,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_CX_Verwaltungs_GmbH ;
 ex:Siemensstadt_Grundstücks-GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemensstadt Grundstücks-GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_Grundstücks-GmbH_und_Co._KG ;
@@ -924,7 +924,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_Grundstücks-GmbH_und_Co._KG ;
 ex:Siemensstadt_Management_GmbH a ex:Company ;
     ex:name "Siemensstadt Management GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_Management_GmbH ;
@@ -933,7 +933,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_Management_GmbH ;
 ex:Siemensstadt_SPE_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemensstadt SPE GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SPE_GmbH_und_Co._KG ;
@@ -942,7 +942,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SPE_GmbH_und_Co._KG ;
 ex:Siemensstadt_SPE_Verwaltungs_GmbH a ex:Company ;
     ex:name "Siemensstadt SPE Verwaltungs GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SPE_Verwaltungs_GmbH ;
@@ -951,7 +951,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SPE_Verwaltungs_GmbH ;
 ex:Siemensstadt_SWHH_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemensstadt SWHH GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SWHH_GmbH_und_Co._KG ;
@@ -960,7 +960,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SWHH_GmbH_und_Co._KG ;
 ex:Siemensstadt_SWHH_Verwaltungs_GmbH a ex:Company ;
     ex:name "Siemensstadt SWHH Verwaltungs GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SWHH_Verwaltungs_GmbH ;
@@ -969,7 +969,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_SWHH_Verwaltungs_GmbH ;
 ex:Siemensstadt_VG_GmbH_und_Co._KG a ex:Company ;
     ex:name "Siemensstadt VG GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_VG_GmbH_und_Co._KG ;
@@ -978,7 +978,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_VG_GmbH_und_Co._KG ;
 ex:Siemensstadt_VG_Verwaltungs_GmbH a ex:Company ;
     ex:name "Siemensstadt VG Verwaltungs GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_VG_Verwaltungs_GmbH ;
@@ -987,7 +987,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemensstadt_VG_Verwaltungs_GmbH ;
 ex:SILLIT_Grundstücks-Verwaltungsgesellschaft_mbH a ex:Company ;
     ex:name "SILLIT Grundstücks-Verwaltungsgesellschaft mbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:SILLIT_Grundstücks-Verwaltungsgesellschaft_mbH ;
@@ -996,7 +996,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:SILLIT_Grundstücks-Verwaltungsgesellschaft_mb
 ex:SIMAR_Ost_Grundstücks-GmbH a ex:Company ;
     ex:name "SIMAR Ost Grundstücks-GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:SIMAR_Ost_Grundstücks-GmbH ;
@@ -1005,7 +1005,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:SIMAR_Ost_Grundstücks-GmbH ;
 ex:Smart_Train_Lease_GmbH a ex:Company ;
     ex:name "Smart Train Lease GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Smart_Train_Lease_GmbH ;
@@ -1014,7 +1014,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Smart_Train_Lease_GmbH ;
 ex:Varian_Medical_Systems_Deutschland_GmbH_und_Co._KG a ex:Company ;
     ex:name "Varian Medical Systems Deutschland GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Darmstadt " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_Deutschland_GmbH_und_Co._KG ;
@@ -1023,7 +1023,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_Deutschland_GmbH_und_Co
 ex:Varian_Medical_Systems_Haan_GmbH a ex:Company ;
     ex:name "Varian Medical Systems Haan GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Haan " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_Haan_GmbH ;
@@ -1032,7 +1032,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_Haan_GmbH ;
 ex:Varian_Medical_Systems_München_GmbH a ex:Company ;
     ex:name "Varian Medical Systems München GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_München_GmbH ;
@@ -1041,7 +1041,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_München_GmbH ;
 ex:Varian_Medical_Systems_Particle_Therapy_GmbH_und_Co._KG a ex:Company ;
     ex:name "Varian Medical Systems Particle Therapy GmbH & Co. KG" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Troisdorf " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_Particle_Therapy_GmbH_und_Co._KG ;
@@ -1050,7 +1050,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:Varian_Medical_Systems_Particle_Therapy_GmbH_u
 ex:VMS_Deutschland_Holdings_GmbH a ex:Company ;
     ex:name "VMS Deutschland Holdings GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Darmstadt " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:VMS_Deutschland_Holdings_GmbH ;
@@ -1059,7 +1059,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:VMS_Deutschland_Holdings_GmbH ;
 ex:VVK_Versicherungsvermittlungs-_und_Verkehrskontor_GmbH a ex:Company ;
     ex:name "VVK Versicherungsvermittlungs- und Verkehrskontor GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:VVK_Versicherungsvermittlungs-_und_Verkehrskontor_GmbH ;
@@ -1068,7 +1068,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:VVK_Versicherungsvermittlungs-_und_Verkehrskon
 ex:WSTECH_GmbH a ex:Company ;
     ex:name "WSTECH GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Flensburg " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:WSTECH_GmbH ;
@@ -1077,7 +1077,7 @@ ex:Siemens_AG ex:hasSubsidiary ex:WSTECH_GmbH ;
 ex:Zeleni_Holding_GmbH a ex:Company ;
     ex:name "Zeleni Holding GmbH" ;
     ex:type "Tochterunternehmen" ;
-    ex:country "Unbekannt" ;
+    ex:country "Deutschland" ;
     ex:city "Kemnath " .
 
 @prefix ex: <http://example.org/siemens#> .
@@ -1088,8 +1088,8 @@ ex:Zeleni_Holding_GmbH a ex:Company ;
 ex:Alchemist_Accelerator_Europe_Fund_I_GmbH_und_Co._KG a ex:Company ;
     ex:name "Alchemist Accelerator Europe Fund I GmbH & Co. KG";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Grünwald ".
+    ex:country "Deutschland";
+    ex:city "Grünwald " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Alchemist_Accelerator_Europe_Fund_I_GmbH_und_Co._KG ;
     ex:ownership "41"^^xsd:integer .
@@ -1097,8 +1097,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:Alchemist_Accelerator_Europe_Fund_I_GmbH_und_C
 ex:ATS_Projekt_Grevenbroich_GmbH a ex:Company ;
     ex:name "ATS Projekt Grevenbroich GmbH";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Schüttorf ".
+    ex:country "Deutschland";
+    ex:city "Schüttorf " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:ATS_Projekt_Grevenbroich_GmbH ;
     ex:ownership "25"^^xsd:integer .
@@ -1106,8 +1106,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:ATS_Projekt_Grevenbroich_GmbH ;
 ex:BentoNet_GmbH a ex:Company ;
     ex:name "BentoNet GmbH";
     ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Baden-Baden ".
+    ex:country "Deutschland";
+    ex:city "Baden-Baden " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:BentoNet_GmbH ;
     ex:ownership "50"^^xsd:integer .
@@ -1115,8 +1115,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:BentoNet_GmbH ;
 ex:Caterva_GmbH a ex:Company ;
     ex:name "Caterva GmbH";
     ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Pullach i. Isartal ".
+    ex:country "Deutschland";
+    ex:city "Pullach i. Isartal " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Caterva_GmbH ;
     ex:ownership "50"^^xsd:integer .
@@ -1124,8 +1124,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:Caterva_GmbH ;
 ex:Creolytix_GmbH a ex:Company ;
     ex:name "Creolytix GmbH";
     ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Weilheim i. OB ".
+    ex:country "Deutschland";
+    ex:city "Weilheim i. OB " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Creolytix_GmbH ;
     ex:ownership "50"^^xsd:integer .
@@ -1133,8 +1133,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:Creolytix_GmbH ;
 ex:DKS_Dienstleistungsgesellschaft_f._Kommunikationsanlagen_des_Stadt-_und_Regionalverkehrs_mbH a ex:Company ;
     ex:name "DKS Dienstleistungsgesellschaft f. Kommunikationsanlagen des Stadt- und Regionalverkehrs mbH";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Köln ".
+    ex:country "Deutschland";
+    ex:city "Köln " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:DKS_Dienstleistungsgesellschaft_f._Kommunikationsanlagen_des_Stadt-_und_Regionalverkehrs_mbH ;
     ex:ownership "49"^^xsd:integer .
@@ -1142,8 +1142,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:DKS_Dienstleistungsgesellschaft_f._Kommunikati
 ex:GuD_Herne_GmbH a ex:Company ;
     ex:name "GuD Herne GmbH";
     ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Essen ".
+    ex:country "Deutschland";
+    ex:city "Essen " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:GuD_Herne_GmbH ;
     ex:ownership "50"^^xsd:integer .
@@ -1151,8 +1151,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:GuD_Herne_GmbH ;
 ex:IFTEC_GmbH_und_Co._KG a ex:Company ;
     ex:name "IFTEC GmbH & Co. KG";
     ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Leipzig ".
+    ex:country "Deutschland";
+    ex:city "Leipzig " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:IFTEC_GmbH_und_Co._KG ;
     ex:ownership "50"^^xsd:integer .
@@ -1160,8 +1160,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:IFTEC_GmbH_und_Co._KG ;
 ex:inpro_Innovationsgesellschaft_für_fortgeschrittene_Produktionssysteme_in_der_Fahrzeugindustrie_mbH a ex:Company ;
     ex:name "inpro Innovationsgesellschaft für fortgeschrittene Produktionssysteme in der Fahrzeugindustrie mbH";
     ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Berlin ".
+    ex:country "Deutschland";
+    ex:city "Berlin " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:inpro_Innovationsgesellschaft_für_fortgeschrittene_Produktionssysteme_in_der_Fahrzeugindustrie_mbH ;
     ex:ownership "50"^^xsd:integer .
@@ -1169,8 +1169,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:inpro_Innovationsgesellschaft_für_fortgeschri
 ex:LIB_Verwaltungs-GmbH a ex:Company ;
     ex:name "LIB Verwaltungs-GmbH";
     ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Leipzig ".
+    ex:country "Deutschland";
+    ex:city "Leipzig " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:LIB_Verwaltungs-GmbH ;
     ex:ownership "50"^^xsd:integer .
@@ -1178,8 +1178,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:LIB_Verwaltungs-GmbH ;
 ex:Ludwig_Bölkow_Campus_GmbH a ex:Company ;
     ex:name "Ludwig Bölkow Campus GmbH";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Taufkirchen ".
+    ex:country "Deutschland";
+    ex:city "Taufkirchen " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Ludwig_Bölkow_Campus_GmbH ;
     ex:ownership "25"^^xsd:integer .
@@ -1187,8 +1187,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:Ludwig_Bölkow_Campus_GmbH ;
 ex:Nordlicht_Holding_GmbH_und_Co._KG a ex:Company ;
     ex:name "Nordlicht Holding GmbH & Co. KG";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Frankfurt am Main ".
+    ex:country "Deutschland";
+    ex:city "Frankfurt am Main " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Nordlicht_Holding_GmbH_und_Co._KG ;
     ex:ownership "33"^^xsd:integer .
@@ -1196,8 +1196,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:Nordlicht_Holding_GmbH_und_Co._KG ;
 ex:Nordlicht_Holding_Verwaltung_GmbH a ex:Company ;
     ex:name "Nordlicht Holding Verwaltung GmbH";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Frankfurt am Main ".
+    ex:country "Deutschland";
+    ex:city "Frankfurt am Main " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Nordlicht_Holding_Verwaltung_GmbH ;
     ex:ownership "33"^^xsd:integer .
@@ -1205,8 +1205,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:Nordlicht_Holding_Verwaltung_GmbH ;
 ex:Siemens_EuroCash a ex:Company ;
     ex:name "Siemens EuroCash";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "München ".
+    ex:country "Deutschland";
+    ex:city "München " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_EuroCash ;
     ex:ownership "3"^^xsd:integer .
@@ -1214,8 +1214,8 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_EuroCash ;
 ex:Sternico_GmbH a ex:Company ;
     ex:name "Sternico GmbH";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Wendeburg ".
+    ex:country "Deutschland";
+    ex:city "Wendeburg " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Sternico_GmbH ;
     ex:ownership "49"^^xsd:integer .
@@ -1223,692 +1223,692 @@ ex:Siemens_AG ex:hasSubsidiary ex:Sternico_GmbH ;
 ex:WUN_H2_GmbH a ex:Company ;
     ex:name "WUN H2 GmbH";
     ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Wunsiedel ".
+    ex:country "Deutschland";
+    ex:city "Wunsiedel " .
 
 ex:Siemens_AG ex:hasSubsidiary ex:WUN_H2_GmbH ;
     ex:ownership "45"^^xsd:integer .
 
 ex:VARIAN_MEDICAL_SYSTEMS_ALGERIA_SPA a ex:Company ;
-    ex:name "VARIAN MEDICAL SYSTEMS ALGERIA SPA";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Hydra / Algerien ".
+    ex:name "VARIAN MEDICAL SYSTEMS ALGERIA SPA" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Algerien" ;
+    ex:city "Hydra" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:VARIAN_MEDICAL_SYSTEMS_ALGERIA_SPA ;
     ex:ownership "49"^^xsd:integer .
 
 ex:Armpower_CJSC a ex:Company ;
-    ex:name "Armpower CJSC";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Jerewan / Armenien ".
+    ex:name "Armpower CJSC" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Armenien" ;
+    ex:city "Jerewan" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Armpower_CJSC ;
     ex:ownership "40"^^xsd:integer .
 
 ex:Siemens_Aarsleff_Konsortium_I_S a ex:Company ;
-    ex:name "Siemens Aarsleff Konsortium I/S";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Ballerup / Dänemark ".
+    ex:name "Siemens Aarsleff Konsortium I/S" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Dänemark" ;
+    ex:city "Ballerup" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Aarsleff_Konsortium_I_S ;
     ex:ownership "67"^^xsd:integer .
 
 ex:Siemens_Mobility_Aarsleff_Konsortium_I_S a ex:Company ;
-    ex:name "Siemens Mobility Aarsleff Konsortium I/S";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Ballerup / Dänemark ".
+    ex:name "Siemens Mobility Aarsleff Konsortium I/S" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Dänemark" ;
+    ex:city "Ballerup" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Mobility_Aarsleff_Konsortium_I_S ;
     ex:ownership "50"^^xsd:integer .
 
 ex:TRIXELL a ex:Company ;
-    ex:name "TRIXELL";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Moirans / Frankreich ".
+    ex:name "TRIXELL" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Frankreich" ;
+    ex:city "Moirans" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:TRIXELL ;
     ex:ownership "25"^^xsd:integer .
 
 ex:EVIOP-TEMPO_S.A._Electrical_Equipment_Manufacturers a ex:Company ;
-    ex:name "EVIOP-TEMPO S.A. Electrical Equipment Manufacturers";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Vassiliko / Griechenland ".
+    ex:name "EVIOP-TEMPO S.A. Electrical Equipment Manufacturers" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Griechenland" ;
+    ex:city "Vassiliko" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:EVIOP-TEMPO_S.A._Electrical_Equipment_Manufacturers ;
     ex:ownership "48"^^xsd:integer .
 
 ex:Parallel_Graphics_Ltd a ex:Company ;
-    ex:name "Parallel Graphics Ltd.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Dublin / Irland ".
+    ex:name "Parallel Graphics Ltd." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Irland" ;
+    ex:city "Dublin" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Parallel_Graphics_Ltd ;
     ex:ownership "57"^^xsd:integer .
 
 ex:Transfima_GEIE a ex:Company ;
-    ex:name "Transfima GEIE";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Mailand / Italien ".
+    ex:name "Transfima GEIE" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Italien" ;
+    ex:city "Mailand" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Transfima_GEIE ;
     ex:ownership "42"^^xsd:integer .
 
 ex:Transfima_S.p.A a ex:Company ;
-    ex:name "Transfima S.p.A.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Mailand / Italien ".
+    ex:name "Transfima S.p.A." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Italien" ;
+    ex:city "Mailand" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Transfima_S.p.A ;
     ex:ownership "49"^^xsd:integer .
 
 ex:KACO_New_Energy_Co a ex:Company ;
-    ex:name "KACO New Energy Co.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Amman / Jordanien ".
+    ex:name "KACO New Energy Co." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Jordanien" ;
+    ex:city "Amman" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:KACO_New_Energy_Co ;
     ex:ownership "49"^^xsd:integer .
 
 ex:Temir_Zhol_Electrification_LLP a ex:Company ;
-    ex:name "Temir Zhol Electrification LLP";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Nur-Sultan-City / Kasachstan ".
+    ex:name "Temir Zhol Electrification LLP" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Kasachstan" ;
+    ex:city "Nur-Sultan-City" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Temir_Zhol_Electrification_LLP ;
     ex:ownership "49"^^xsd:integer .
 
 ex:EGM_Holding_Limited a ex:Company ;
-    ex:name "EGM Holding Limited";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Birkirkara / Malta ".
+    ex:name "EGM Holding Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Malta" ;
+    ex:city "Birkirkara" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:EGM_Holding_Limited ;
     ex:ownership "33"^^xsd:integer .
 
 ex:Energie_Electrique_de_Tahaddart_S.A a ex:Company ;
-    ex:name "Energie Electrique de Tahaddart S.A.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Tanger / Marokko ".
+    ex:name "Energie Electrique de Tahaddart S.A." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Marokko" ;
+    ex:city "Tanger" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Energie_Electrique_de_Tahaddart_S.A ;
     ex:ownership "20"^^xsd:integer .
 
 ex:Buitengaats_C.V a ex:Company ;
-    ex:name "Buitengaats C.V.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Amsterdam / Niederlande ".
+    ex:name "Buitengaats C.V." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Amsterdam" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Buitengaats_C.V ;
     ex:ownership "20"^^xsd:integer .
 
 ex:Buitengaats_Management_B.V a ex:Company ;
-    ex:name "Buitengaats Management B.V.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Eemshaven / Niederlande ".
+    ex:name "Buitengaats Management B.V." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Eemshaven" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Buitengaats_Management_B.V ;
     ex:ownership "20"^^xsd:integer .
 
 ex:Infraspeed_EPC_Consortium_V.O.F a ex:Company ;
-    ex:name "Infraspeed EPC Consortium V.O.F.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Zoetermeer / Niederlande ".
+    ex:name "Infraspeed EPC Consortium V.O.F." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Zoetermeer" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Infraspeed_EPC_Consortium_V.O.F ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Infraspeed_Maintainance_B.V a ex:Company ;
-    ex:name "Infraspeed Maintainance B.V.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Dordrecht / Niederlande ".
+    ex:name "Infraspeed Maintainance B.V." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Dordrecht" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Infraspeed_Maintainance_B.V ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Locomotive_Workshop_Rotterdam_B.V a ex:Company ;
-    ex:name "Locomotive Workshop Rotterdam B.V.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Zoetermeer / Niederlande ".
+    ex:name "Locomotive Workshop Rotterdam B.V." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Zoetermeer" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Locomotive_Workshop_Rotterdam_B.V ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Ural_Locomotives_Holding_Besloten_Vennootschap a ex:Company ;
-    ex:name "Ural Locomotives Holding Besloten Vennootschap";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Den Haag / Niederlande ".
+    ex:name "Ural Locomotives Holding Besloten Vennootschap" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Den Haag" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Ural_Locomotives_Holding_Besloten_Vennootschap ;
     ex:ownership "50"^^xsd:integer .
 
 ex:ZeeEnergie_C.V a ex:Company ;
-    ex:name "ZeeEnergie C.V.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Amsterdam / Niederlande ".
+    ex:name "ZeeEnergie C.V." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Amsterdam" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:ZeeEnergie_C.V ;
     ex:ownership "20"^^xsd:integer .
 
 ex:ZeeEnergie_Management_B.V a ex:Company ;
-    ex:name "ZeeEnergie Management B.V.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Eemshaven / Niederlande ".
+    ex:name "ZeeEnergie Management B.V." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Niederlande" ;
+    ex:city "Eemshaven" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:ZeeEnergie_Management_B.V ;
     ex:ownership "20"^^xsd:integer .
 
 ex:Aspern_Smart_City_Research_GmbH a ex:Company ;
-    ex:name "Aspern Smart City Research GmbH";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Wien / Österreich ".
+    ex:name "Aspern Smart City Research GmbH" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Österreich" ;
+    ex:city "Wien" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Aspern_Smart_City_Research_GmbH ;
     ex:ownership "49"^^xsd:integer .
 
 ex:Aspern_Smart_City_Research_GmbH_und_Co_KG a ex:Company ;
-    ex:name "Aspern Smart City Research GmbH & Co KG";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Wien / Österreich ".
+    ex:name "Aspern Smart City Research GmbH & Co KG" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Österreich" ;
+    ex:city "Wien" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Aspern_Smart_City_Research_GmbH_und_Co_KG ;
     ex:ownership "49"^^xsd:integer .
 
 ex:Rousch_Pakistan_Power_Ltd a ex:Company ;
-    ex:name "Rousch (Pakistan) Power Ltd.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Islamabad / Pakistan ".
+    ex:name "Rousch (Pakistan) Power Ltd." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Pakistan" ;
+    ex:city "Islamabad" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Rousch_Pakistan_Power_Ltd ;
     ex:ownership "26"^^xsd:integer .
 
 ex:Certas_AG a ex:Company ;
-    ex:name "Certas AG";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Zürich / Schweiz ".
+    ex:name "Certas AG" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Schweiz" ;
+    ex:city "Zürich" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Certas_AG ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Interessengemeinschaft_TUS a ex:Company ;
-    ex:name "Interessengemeinschaft TUS";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Volketswil / Schweiz ".
+    ex:name "Interessengemeinschaft TUS" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Schweiz" ;
+    ex:city "Volketswil" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Interessengemeinschaft_TUS ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Nertus_Mantenimiento_Ferroviario_y_Servicios_S.A a ex:Company ;
-    ex:name "Nertus Mantenimiento Ferroviario y Servicios S.A.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Madrid / Spanien ".
+    ex:name "Nertus Mantenimiento Ferroviario y Servicios S.A." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Spanien" ;
+    ex:city "Madrid" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Nertus_Mantenimiento_Ferroviario_y_Servicios_S.A ;
     ex:ownership "51"^^xsd:integer .
 
 ex:Impilo_Consortium_Pty._Ltd a ex:Company ;
-    ex:name "Impilo Consortium (Pty.) Ltd.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "La Lucia / Südafrika ".
+    ex:name "Impilo Consortium (Pty.) Ltd." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Südafrika" ;
+    ex:city "La Lucia" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Impilo_Consortium_Pty._Ltd ;
     ex:ownership "31"^^xsd:integer .
 
 ex:CAPTON_ENERGY_DMCC a ex:Company ;
-    ex:name "CAPTON ENERGY DMCC";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Dubai / Vereinigte Arabische Emirate ".
+    ex:name "CAPTON ENERGY DMCC" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Vereinigte Arabische Emirate" ;
+    ex:city "Dubai" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:CAPTON_ENERGY_DMCC ;
     ex:ownership "49"^^xsd:integer .
 
 ex:Awel_Y_Môr_Offshore_Wind_Farm_Limited a ex:Company ;
-    ex:name "Awel Y Môr Offshore Wind Farm Limited";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Swindon, Wiltshire / Vereinigtes Königreich ".
+    ex:name "Awel Y Môr Offshore Wind Farm Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Vereinigtes Königreich" ;
+    ex:city "Swindon, Wiltshire" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Awel_Y_Môr_Offshore_Wind_Farm_Limited ;
     ex:ownership "10"^^xsd:integer .
 
 ex:Cross_London_Trains_Holdco_2_Limited a ex:Company ;
-    ex:name "Cross London Trains Holdco 2 Limited";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "London / Vereinigtes Königreich ".
+    ex:name "Cross London Trains Holdco 2 Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Vereinigtes Königreich" ;
+    ex:city "London" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Cross_London_Trains_Holdco_2_Limited ;
     ex:ownership "33"^^xsd:integer .
 
 ex:Galloper_Wind_Farm_Holding_Company_Limited a ex:Company ;
-    ex:name "Galloper Wind Farm Holding Company Limited";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Swindon, Wiltshire / Vereinigtes Königreich ".
+    ex:name "Galloper Wind Farm Holding Company Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Vereinigtes Königreich" ;
+    ex:city "Swindon, Wiltshire" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Galloper_Wind_Farm_Holding_Company_Limited ;
     ex:ownership "25"^^xsd:integer .
 
 ex:Plessey_Holdings_Ltd a ex:Company ;
-    ex:name "Plessey Holdings Ltd.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Farnborough, Hampshire / Vereinigtes Königreich ".
+    ex:name "Plessey Holdings Ltd." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Vereinigtes Königreich" ;
+    ex:city "Farnborough, Hampshire" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Plessey_Holdings_Ltd ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Brasol_Participaçoes_e_Empreendimentos_S.A a ex:Company ;
-    ex:name "Brasol Participaçoes e Empreendimentos S.A.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Brazil, São Paulo / Brasilien ".
+    ex:name "Brasol Participaçoes e Empreendimentos S.A." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Brasilien" ;
+    ex:city "Brazil, São Paulo" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Brasol_Participaçoes_e_Empreendimentos_S.A ;
     ex:ownership "36"^^xsd:integer .
 
 ex:GNA_1_Geração_de_Energia_S.A a ex:Company ;
-    ex:name "GNA 1 Geração de Energia S.A.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "São João da Barra / Brasilien ".
+    ex:name "GNA 1 Geração de Energia S.A." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Brasilien" ;
+    ex:city "São João da Barra" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:GNA_1_Geração_de_Energia_S.A ;
     ex:ownership "22"^^xsd:integer .
 
 ex:Micropower_Comerc_Energia_S.A a ex:Company ;
-    ex:name "Micropower Comerc Energia S.A.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "São Paulo / Brasilien ".
+    ex:name "Micropower Comerc Energia S.A." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Brasilien" ;
+    ex:city "São Paulo" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Micropower_Comerc_Energia_S.A ;
     ex:ownership "20"^^xsd:integer .
 
 ex:MPC_Serviços_Energéticos_1A_S.A a ex:Company ;
-    ex:name "MPC Serviços Energéticos 1A S.A";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Navegantes / Brasilien ".
+    ex:name "MPC Serviços Energéticos 1A S.A" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Brasilien" ;
+    ex:city "Navegantes" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:MPC_Serviços_Energéticos_1A_S.A ;
     ex:ownership "48"^^xsd:integer .
 
 ex:MPC_Serviços_Energéticos_1B_S.A a ex:Company ;
-    ex:name "MPC Serviços Energéticos 1B S.A.";
-    ex:type "Assoziiertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Cabo de Santo Agostinho / Brasilien ".
+    ex:name "MPC Serviços Energéticos 1B S.A." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Brasilien" ;
+    ex:city "Cabo de Santo Agostinho" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:MPC_Serviços_Energéticos_1B_S.A ;
     ex:ownership "48"^^xsd:integer .
 
 ex:Akuo_Energy_Dominicana a ex:Company ;
-    ex:name "Akuo Energy Dominicana";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "S.R.L, Santo Domingo / Dominikanische Republik ".
+    ex:name "Akuo Energy Dominicana" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Dominikanische Republik" ;
+    ex:city "S.R.L, Santo Domingo" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Akuo_Energy_Dominicana ;
     ex:ownership "33"^^xsd:integer .
 
 ex:Tractian_Limited a ex:Company ;
-    ex:name "Tractian Limited";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Grand Cayman / Kaimaninseln ".
+    ex:name "Tractian Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Kaimaninseln" ;
+    ex:city "Grand Cayman" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Tractian_Limited ;
     ex:ownership "22"^^xsd:integer .
 
 ex:DELARO a ex:Company ;
-    ex:name "DELARO";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "S.A.P.I. DE C.V., Mexiko-Stadt / Mexiko ".
+    ex:name "DELARO" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Mexiko" ;
+    ex:city "S.A.P.I. DE C.V., Mexiko-Stadt" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:DELARO ;
     ex:ownership "29"^^xsd:integer .
 
 ex:Tenedora_de_Activos_Medicos_S.A.P.I._de_C.V a ex:Company ;
-    ex:name "Tenedora de Activos Medicos S.A.P.I. de C.V";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Mexiko-Stadt / Mexiko ".
+    ex:name "Tenedora de Activos Medicos S.A.P.I. de C.V" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Mexiko" ;
+    ex:city "Mexiko-Stadt" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Tenedora_de_Activos_Medicos_S.A.P.I._de_C.V ;
     ex:ownership "49"^^xsd:integer .
 
 ex:AurasellAI a ex:Company ;
-    ex:name "AurasellAI";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Inc, Dover, DE / USA ".
+    ex:name "AurasellAI" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "Inc, Dover, DE" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:AurasellAI ;
     ex:ownership "26"^^xsd:integer .
 
 ex:DeepHow_Corp a ex:Company ;
-    ex:name "DeepHow Corp.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Princeton, NJ / USA ".
+    ex:name "DeepHow Corp." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "Princeton, NJ" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:DeepHow_Corp ;
     ex:ownership "23"^^xsd:integer .
 
 ex:Fluence_Energy a ex:Company ;
-    ex:name "Fluence Energy";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Inc., Wilmington, DE / USA ".
+    ex:name "Fluence Energy" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "Inc., Wilmington, DE" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Fluence_Energy ;
     ex:ownership "22"^^xsd:integer .
 
 ex:NMR-SGT_JV a ex:Company ;
-    ex:name "NMR-SGT JV";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "LLC, Wilmington, DE / USA ".
+    ex:name "NMR-SGT JV" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "LLC, Wilmington, DE" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:NMR-SGT_JV ;
     ex:ownership "49"^^xsd:integer .
 
 ex:PhSiTh_LLC a ex:Company ;
-    ex:name "PhSiTh LLC";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "New Castle, DE / USA ".
+    ex:name "PhSiTh LLC" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "New Castle, DE" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:PhSiTh_LLC ;
     ex:ownership "33"^^xsd:integer .
 
 ex:Radiant_Security a ex:Company ;
-    ex:name "Radiant Security";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Inc., Wilmington, DE / USA ".
+    ex:name "Radiant Security" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "Inc., Wilmington, DE" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Radiant_Security ;
     ex:ownership "23"^^xsd:integer .
 
 ex:Rether_networks a ex:Company ;
-    ex:name "Rether networks";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Inc., Berkeley, CA / USA ".
+    ex:name "Rether networks" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "Inc., Berkeley, CA" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Rether_networks ;
     ex:ownership "30"^^xsd:integer .
 
 ex:Software.co_Technologies a ex:Company ;
-    ex:name "Software.co Technologies";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Inc., Wilmington, DE / USA ".
+    ex:name "Software.co Technologies" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "Inc., Wilmington, DE" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Software.co_Technologies ;
     ex:ownership "23"^^xsd:integer .
 
 ex:Wi-Tronix_Group_Inc a ex:Company ;
-    ex:name "Wi-Tronix Group Inc.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Dover, DE / USA ".
+    ex:name "Wi-Tronix Group Inc." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "USA" ;
+    ex:city "Dover, DE" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Wi-Tronix_Group_Inc ;
     ex:ownership "30"^^xsd:integer .
 
 ex:Exemplar_Health_NBH_Partnership a ex:Company ;
-    ex:name "Exemplar Health (NBH) Partnership";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Melbourne / Australien ".
+    ex:name "Exemplar Health (NBH) Partnership" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Australien" ;
+    ex:city "Melbourne" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Exemplar_Health_NBH_Partnership ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Parklife_Metro_Holdings_Pty_Ltd a ex:Company ;
-    ex:name "Parklife Metro Holdings Pty Ltd";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Melbourne / Australien ".
+    ex:name "Parklife Metro Holdings Pty Ltd" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Australien" ;
+    ex:city "Melbourne" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Parklife_Metro_Holdings_Pty_Ltd ;
     ex:ownership "20"^^xsd:integer .
 
 ex:Parklife_Metro_Holdings_Unit_Trust a ex:Company ;
-    ex:name "Parklife Metro Holdings Unit Trust";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Melbourne / Australien ".
+    ex:name "Parklife Metro Holdings Unit Trust" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Australien" ;
+    ex:city "Melbourne" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Parklife_Metro_Holdings_Unit_Trust ;
     ex:ownership "20"^^xsd:integer .
 
 ex:PHM_Technology_Pty_Ltd a ex:Company ;
-    ex:name "PHM Technology Pty Ltd";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Melbourne / Australien ".
+    ex:name "PHM Technology Pty Ltd" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Australien" ;
+    ex:city "Melbourne" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:PHM_Technology_Pty_Ltd ;
     ex:ownership "37"^^xsd:integer .
 
 ex:Chengdu_Wayin_Zhiyun_Medical_Technology_Co a ex:Company ;
-    ex:name "Chengdu Wayin Zhiyun Medical Technology Co.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Ltd., Chengdu / China ".
+    ex:name "Chengdu Wayin Zhiyun Medical Technology Co." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "China" ;
+    ex:city "Ltd., Chengdu" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Chengdu_Wayin_Zhiyun_Medical_Technology_Co ;
     ex:ownership "49"^^xsd:integer .
 
 ex:DBEST_Beijing_Facility_Technology_Management_Co a ex:Company ;
-    ex:name "DBEST (Beijing) Facility Technology Management Co.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Ltd., Peking / China ".
+    ex:name "DBEST (Beijing) Facility Technology Management Co." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "China" ;
+    ex:city "Ltd., Peking" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:DBEST_Beijing_Facility_Technology_Management_Co ;
     ex:ownership "25"^^xsd:integer .
 
 ex:Guangzhou_Suikai_Smart_Energy_Co a ex:Company ;
-    ex:name "Guangzhou Suikai Smart Energy Co.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Ltd., Guangzhou / China ".
+    ex:name "Guangzhou Suikai Smart Energy Co." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "China" ;
+    ex:city "Ltd., Guangzhou" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Guangzhou_Suikai_Smart_Energy_Co ;
     ex:ownership "35"^^xsd:integer .
 
 ex:Siemens_Traction_Equipment_Ltd a ex:Company ;
-    ex:name "Siemens Traction Equipment Ltd.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Zhuzhou, Zhuzhou / China ".
+    ex:name "Siemens Traction Equipment Ltd." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "China" ;
+    ex:city "Zhuzhou, Zhuzhou" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Traction_Equipment_Ltd ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Smart_Metering_Solutions_Changsha_Co._Ltd a ex:Company ;
-    ex:name "Smart Metering Solutions (Changsha) Co. Ltd.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Changsha / China ".
+    ex:name "Smart Metering Solutions (Changsha) Co. Ltd." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "China" ;
+    ex:city "Changsha" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Smart_Metering_Solutions_Changsha_Co._Ltd ;
     ex:ownership "49"^^xsd:integer .
 
 ex:TianJin_ZongXi_Traction_Motor_Ltd a ex:Company ;
-    ex:name "TianJin ZongXi Traction Motor Ltd.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Tianjin / China ".
+    ex:name "TianJin ZongXi Traction Motor Ltd." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "China" ;
+    ex:city "Tianjin" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:TianJin_ZongXi_Traction_Motor_Ltd ;
     ex:ownership "50"^^xsd:integer .
 
 ex:TieKe_Intelligent_Signalling_Railway_Equipment_Co a ex:Company ;
-    ex:name "TieKe Intelligent Signalling Railway Equipment Co.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Ltd., Tianjin / China ".
+    ex:name "TieKe Intelligent Signalling Railway Equipment Co." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "China" ;
+    ex:city "Ltd., Tianjin" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:TieKe_Intelligent_Signalling_Railway_Equipment_Co ;
     ex:ownership "49"^^xsd:integer .
 
 ex:XiAn_X-Ray_Target_Ltd a ex:Company ;
-    ex:name "Xi’An X-Ray Target Ltd.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Xi'an / China ".
+    ex:name "Xi’An X-Ray Target Ltd." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "China" ;
+    ex:city "Xi'an" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:XiAn_X-Ray_Target_Ltd ;
     ex:ownership "43"^^xsd:integer .
 
 ex:Zhenjiang_Siemens_Busbar_Trunking_Systems_Co._Ltd a ex:Company ;
-    ex:name "Zhenjiang Siemens Busbar Trunking Systems Co. Ltd.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Yangzhong / China ".
+    ex:name "Zhenjiang Siemens Busbar Trunking Systems Co. Ltd." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "China" ;
+    ex:city "Yangzhong" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Zhenjiang_Siemens_Busbar_Trunking_Systems_Co._Ltd ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Zhi_Dao_Railway_Equipment_Ltd a ex:Company ;
-    ex:name "Zhi Dao Railway Equipment Ltd.";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Taiyuan / China ".
+    ex:name "Zhi Dao Railway Equipment Ltd." ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "China" ;
+    ex:city "Taiyuan" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Zhi_Dao_Railway_Equipment_Ltd ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Bangalore_International_Airport_Ltd a ex:Company ;
-    ex:name "Bangalore International Airport Ltd.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Bangalore / Indien ".
+    ex:name "Bangalore International Airport Ltd." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Indien" ;
+    ex:city "Bangalore" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Bangalore_International_Airport_Ltd ;
     ex:ownership "10"^^xsd:integer .
 
 ex:Greenko_Sironj_Wind_Power_Private_Limited a ex:Company ;
-    ex:name "Greenko Sironj Wind Power Private Limited";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Neu-Delhi / Indien ".
+    ex:name "Greenko Sironj Wind Power Private Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Indien" ;
+    ex:city "Neu-Delhi" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Greenko_Sironj_Wind_Power_Private_Limited ;
     ex:ownership "46"^^xsd:integer .
 
 ex:Happzee_Technologies_Private_Limited a ex:Company ;
-    ex:name "Happzee Technologies Private Limited";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Hyderabad / Indien ".
+    ex:name "Happzee Technologies Private Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Indien" ;
+    ex:city "Hyderabad" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Happzee_Technologies_Private_Limited ;
     ex:ownership "7"^^xsd:integer .
 
 ex:Pune_IT_City_Metro_Rail_Limited a ex:Company ;
-    ex:name "Pune IT City Metro Rail Limited";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Pune / Indien ".
+    ex:name "Pune IT City Metro Rail Limited" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Indien" ;
+    ex:city "Pune" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Pune_IT_City_Metro_Rail_Limited ;
     ex:ownership "26"^^xsd:integer .
 
 ex:SUNSOLE_RENEWABLES_PRIVATE_LIMITED a ex:Company ;
-    ex:name "SUNSOLE RENEWABLES PRIVATE LIMITED";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Mumbai / Indien ".
+    ex:name "SUNSOLE RENEWABLES PRIVATE LIMITED" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Indien" ;
+    ex:city "Mumbai" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:SUNSOLE_RENEWABLES_PRIVATE_LIMITED ;
     ex:ownership "26"^^xsd:integer .
 
 ex:P.T._Jawa_Power a ex:Company ;
-    ex:name "P.T. Jawa Power";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Jakarta / Indonesien ".
+    ex:name "P.T. Jawa Power" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Indonesien" ;
+    ex:city "Jakarta" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:P.T._Jawa_Power ;
     ex:ownership "50"^^xsd:integer .
 
 ex:BE_CundI_Solutions_Holding_Pte._Ltd a ex:Company ;
-    ex:name "BE C&I Solutions Holding Pte. Ltd.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Singapur / Singapur ".
+    ex:name "BE C&I Solutions Holding Pte. Ltd." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Singapur" ;
+    ex:city "Singapur" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:BE_CundI_Solutions_Holding_Pte._Ltd ;
     ex:ownership "25"^^xsd:integer .
 
 ex:Power_Automation_Pte._Ltd a ex:Company ;
-    ex:name "Power Automation Pte. Ltd.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Singapur / Singapur ".
+    ex:name "Power Automation Pte. Ltd." ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Singapur" ;
+    ex:city "Singapur" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Power_Automation_Pte._Ltd ;
     ex:ownership "49"^^xsd:integer .
 
 ex:SINGAPORE_AQUACULTURE_TECHNOLOGIES_SAT_PTE_LTD a ex:Company ;
-    ex:name "SINGAPORE AQUACULTURE TECHNOLOGIES (SAT) PTE LTD";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Singapur / Singapur ".
+    ex:name "SINGAPORE AQUACULTURE TECHNOLOGIES (SAT) PTE LTD" ;
+    ex:type "Assoziertes Unternehmen" ;
+    ex:country "Singapur" ;
+    ex:city "Singapur" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:SINGAPORE_AQUACULTURE_TECHNOLOGIES_SAT_PTE_LTD ;
     ex:ownership "14"^^xsd:integer .
 
 ex:Asiri_A_O_I_Cancer_Centre_Private_Limited a ex:Company ;
-    ex:name "Asiri A O I Cancer Centre (Private) Limited";
-    ex:type "Gemeinschaftsunternehmen";
-    ex:country "Unbekannt";
-    ex:city "Colombo / Sri Lanka ".
+    ex:name "Asiri A O I Cancer Centre (Private) Limited" ;
+    ex:type "Gemeinschaftsunternehmen" ;
+    ex:country "Sri Lanka" ;
+    ex:city "Colombo" .
 
 ex:Siemens_AG ex:hasSubsidiary ex:Asiri_A_O_I_Cancer_Centre_Private_Limited ;
     ex:ownership "50"^^xsd:integer .
 
 ex:Siemens_Energy_AG a ex:Company ;
     ex:name "Siemens Energy AG";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "München ".
+    ex:type "Sonstige Betiligungen";
+    ex:country "Deutschland";
+    ex:city "München".
 
 ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Energy_AG ;
     ex:ownership "17"^^xsd:integer .
@@ -1916,35 +1916,35 @@ ex:Siemens_AG ex:hasSubsidiary ex:Siemens_Energy_AG ;
 ex:KIC_InnoEnergy_S.E a ex:Company ;
     ex:name "KIC InnoEnergy S.E.";
     ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Eindhoven / Niederlande ".
+    ex:country "Niederlande";
+    ex:city "Eindhoven".
 
 ex:Siemens_AG ex:hasSubsidiary ex:KIC_InnoEnergy_S.E ;
     ex:ownership "6"^^xsd:integer .
 
 ex:Electrify_America a ex:Company ;
     ex:name "Electrify America";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "LLC, Wilmington, DE / USA ".
+    ex:type "Sonstige Betiligungen";
+    ex:country "DE/USA";
+    ex:city "Wilmington".
 
 ex:Siemens_AG ex:hasSubsidiary ex:Electrify_America ;
     ex:ownership "9"^^xsd:integer .
 
 ex:HistoSonics a ex:Company ;
     ex:name "HistoSonics";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Inc., Wilmington, DE / USA ".
+    ex:type "Sonstige Betiligungen";
+    ex:country "DE / USA";
+    ex:city "Wilmington".
 
 ex:Siemens_AG ex:hasSubsidiary ex:HistoSonics ;
     ex:ownership "7"^^xsd:integer .
 
 ex:Thoughtworks_Holding_Inc a ex:Company ;
     ex:name "Thoughtworks Holding Inc.";
-    ex:type "Assoziertes Unternehmen";
-    ex:country "Unbekannt";
-    ex:city "Wilmington, DE / USA ".
+    ex:type "Sonstige Betiligungen";
+    ex:country "DE / USA";
+    ex:city "Wilmington".
 
 ex:Siemens_AG ex:hasSubsidiary ex:Thoughtworks_Holding_Inc ;
     ex:ownership "7"^^xsd:integer .
