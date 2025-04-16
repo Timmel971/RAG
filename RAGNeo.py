@@ -154,14 +154,6 @@ def get_neo4j_context():
 
 def main():
     st.markdown("### 📌 Hallo, hier ist Neo – Ihr persönlicher Assistent rund um das Unternehmen der Siemens AG!")
-# Verbindung zu Neo4j testen
-try:
-    with driver.session() as session:
-        result = session.run("RETURN 1 AS test")
-        test_value = result.single()["test"]
-        st.success(f"✅ Verbindung zu Neo4j hergestellt! Testwert: {test_value}")
-except Exception as e:
-    st.error(f"❌ Verbindung zu Neo4j fehlgeschlagen: {e}")
 
     if "documents" not in st.session_state:
         try:
