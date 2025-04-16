@@ -136,21 +136,43 @@ def generate_response(context, user_query):
 def get_neo4j_context():
     with driver.session() as session:
         try:
-            result = session.run("""
-                MATCH (b:BusinessUnit)-[:HAS_BU_Metric]->(m)
-                RETURN b.name AS business_unit, m.name AS metric
-                LIMIT 25
-            """)
             context_lines = []
+
+            # Dynamische Abfrage aller Triple mit Beschreibung
+            result = session.run("""
+                MATCH (a)-[r]->(b)
+                RETURN a, r, b
+                LIMIT 100
+            """)
+
             for record in result:
-                context_lines.append(f"{record['business_unit']} hat die Metrik {record['metric']}.")
+                a = record["a"]
+                b = record["b"]
+                r = record["r"]
+
+                a_name = a.get("name", "Unbekanntes Objekt")
+                b_name = b.get("name", "Unbekanntes Objekt")
+                rel_type = r.type
+
+                line = f"{a_name} steht in Beziehung ({rel_type}) zu {b_name}"
+
+                # Wenn weitere Properties wie 'sitz', 'wert' etc. existieren
+                if "sitz" in a:
+                    line += f" und hat Sitz in {a['sitz']}"
+                if "wert" in r:
+                    line += f", Wert: {r['wert']}"
+                if "jahr" in r:
+                    line += f", Jahr: {r['jahr']}"
+
+                context_lines.append(line + ".")
+
             neo4j_text = "\n".join(context_lines)
-            st.write("🧠 Neo4j-Kontext geladen:", neo4j_text)
+            st.write("🧠 Vollständiger Neo4j-Kontext geladen:", neo4j_text)
             return neo4j_text
+
         except Exception as e:
             st.error(f"❌ Fehler bei der Neo4j-Abfrage: {e}")
             return "Fehler beim Laden der Neo4j-Daten."
-
 
 def main():
     st.markdown("### 📌 Hallo, hier ist Neo – Ihr persönlicher Assistent rund um das Unternehmen der Siemens AG!")
