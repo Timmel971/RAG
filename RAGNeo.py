@@ -21,14 +21,14 @@ def get_neo4j_context(limit=1000):
         try:
             context_lines = []
             result = session.run("""
-                MATCH (a)-[r]->(b)
-                RETURN a, r, b
+                MATCH (m:FinancialMetric)-[r]-(n)
+                RETURN m, r, n
                 LIMIT $limit
             """, limit=limit)
 
             for record in result:
-                a = record["a"]
-                b = record["b"]
+                m = record["m"]
+                n = record["n"]
                 r = record["r"]
 
                 def describe_node(node):
@@ -43,11 +43,11 @@ def get_neo4j_context(limit=1000):
                     props = [f"{k}: {v}" for k, v in node.items() if k not in ["name", "key", "title", "id"]]
                     return f"{label} {name}" + (f" ({', '.join(props)})" if props else "")
 
-                a_desc = describe_node(a)
-                b_desc = describe_node(b)
+                m_desc = describe_node(m)
+                n_desc = describe_node(n)
                 rel_type = r.type
 
-                context_lines.append(f"{a_desc} steht in Beziehung ({rel_type}) zu {b_desc}.")
+                context_lines.append(f"{m_desc} steht in Beziehung ({rel_type}) zu {n_desc}.")
 
             return "\n".join(context_lines)
 
@@ -59,8 +59,18 @@ def generate_response(context, user_query):
         return "❌ Kontext oder Nutzereingabe fehlt."
 
     messages = [
-        {"role": "system", "content": "Bitte beantworte die Nutzerfrage nur basierend auf den folgenden bereitgestellten Neo4j-Daten. Nutze keine anderen Quellen oder dein Vorwissen. Antworte mit 'Keine ausreichenden Daten gefunden', wenn keine Informationen vorhanden sind."},
-        {"role": "user", "content": f"Kontext: {context}\nNutzerfrage: {user_query}"}
+        {
+            "role": "system",
+            "content": (
+                "Bitte beantworte die Nutzerfrage nur basierend auf den folgenden bereitgestellten Neo4j-Daten. "
+                "Nutze keine anderen Quellen oder dein Vorwissen. "
+                "Antworte mit 'Keine ausreichenden Daten gefunden', wenn keine Informationen vorhanden sind."
+            )
+        },
+        {
+            "role": "user",
+            "content": f"Kontext: {context}\nNutzerfrage: {user_query}"
+        }
     ]
 
     try:
@@ -75,13 +85,13 @@ def generate_response(context, user_query):
         return f"❌ Fehler beim Generieren der Antwort: {str(e)}"
 
 def main():
-    st.markdown("### 🤖 Frage-Antwort-System auf Basis von Neo4j")
+    st.markdown("### 📊 Neo4j-basiertes Frage-Antwort-System für Finanzkennzahlen")
 
     user_query = st.text_input("❓ Was möchtest du wissen?")
     send = st.button("Senden")
 
     if send and user_query:
-        with st.spinner("🔍 Lade Neo4j-Daten..."):
+        with st.spinner("🔍 Lade relevante Neo4j-Daten (nur FinancialMetric)..."):
             context = get_neo4j_context(limit=1000)
         with st.spinner("🤖 Generiere Antwort..."):
             answer = generate_response(context, user_query)
