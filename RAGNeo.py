@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 import numpy as np
-import time
 from neo4j import GraphDatabase
 import openai
 
@@ -17,32 +16,32 @@ NEO4J_USER = st.secrets["NEO4J_USER"]
 NEO4J_PASSWORD = st.secrets["NEO4J_PASSWORD"]
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
-def get_neo4j_context():
+def get_neo4j_context(limit=1000):
     with driver.session() as session:
         try:
             context_lines = []
             result = session.run("""
                 MATCH (a)-[r]->(b)
                 RETURN a, r, b
-                LIMIT 100
-            """)
+                LIMIT $limit
+            """, limit=limit)
+
             for record in result:
                 a = record["a"]
                 b = record["b"]
                 r = record["r"]
 
                 def describe_node(node):
+                    label = next(iter(node.labels), "Node")
                     name = (
                         node.get("name") or
                         node.get("key") or
                         node.get("title") or
-                        node.get("wert") or
-                        node.get("art") or
-                        node.get("type") or
-                        "Unbekanntes Objekt"
+                        node.get("id") or
+                        "Unbekannt"
                     )
-                    props = [f"{k}: {v}" for k, v in node.items() if k != "name"]
-                    return f"{name} ({', '.join(props)})" if props else name
+                    props = [f"{k}: {v}" for k, v in node.items() if k not in ["name", "key", "title", "id"]]
+                    return f"{label} {name}" + (f" ({', '.join(props)})" if props else "")
 
                 a_desc = describe_node(a)
                 b_desc = describe_node(b)
@@ -83,10 +82,10 @@ def main():
 
     if send and user_query:
         with st.spinner("🔍 Lade Neo4j-Daten..."):
-            context = get_neo4j_context()
+            context = get_neo4j_context(limit=1000)
         with st.spinner("🤖 Generiere Antwort..."):
             answer = generate_response(context, user_query)
-            st.markdown(f"### Antwort:\n{answer}")
+            st.markdown(f"### 📌 Antwort:\n{answer}")
 
 if __name__ == "__main__":
     main()
