@@ -193,7 +193,7 @@ def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
         return 0.0
     return np.dot(a, b) / (norm_a * norm_b)
 
-def retrieve_relevant_chunks(query: str, chunk_embeddings: List[Tuple[str, np.ndarray]], top_n: int = 3) -> str:
+def retrieve_relevant_chunks(query: str, chunk_embeddings: List[Tuple[str, np.ndarray]], top_n: int = 5) -> str:
     """Holt die relevantesten Text-Chunks basierend auf der Query."""
     try:
         query_emb = get_embedding(query)
@@ -209,35 +209,54 @@ def retrieve_relevant_chunks(query: str, chunk_embeddings: List[Tuple[str, np.nd
         st.error(f"Fehler bei der Dokumentensuche: {e}")
         return "Fehler bei der Dokumentensuche."
 
-def get_financialmetric_neo4j_context(limit: int = 1000) -> str:
-    """Holt Finanzmetrik-Kontext aus Neo4j."""
+def get_neo4j_context(limit: int = 1000) -> str:
+    """Holt Kontext aus Neo4j für Finanzmetriken, Unternehmen und Beteiligungen."""
     with driver.session() as session:
         try:
             context_lines = []
-            result = session.run("""
-                MATCH (m:FinancialMetric)-[r]-(n)
+            # Abfrage für Finanzmetriken
+            result_metrics = session.run("""
+                MATCH (m:FinancialMetric)-[r1]-(n)
                 WHERE m.value IS NOT NULL AND m.year IS NOT NULL
-                RETURN m, r, n
+                RETURN m, r1, n
                 LIMIT $limit
-            """, limit=limit)
+            """, limit=limit//2)
 
-            for record in result:
+            # Abfrage für Unternehmen und Beteiligungen
+            result_companies = session.run("""
+                MATCH (p:ParentCompany)-[r2:HAS_PARTICIPATION|HAS_ACQUISITION]->(c:Company)
+                RETURN p, r2, c
+                LIMIT $limit
+            """, limit=limit//2)
+
+            def describe_node(node):
+                if node is None:
+                    return "None"
+                label = list(node.labels)[0] if node.labels else "Node"
+                name = node.get("name") or node.get("id") or label
+                props = ", ".join([f"{k}: {v}" for k, v in node.items() if k not in ["name", "id"] and v is not None])
+                return f"{label}({name}) [{props}]" if props else f"{label}({name})"
+
+            # Finanzmetriken verarbeiten
+            for record in result_metrics:
                 m = record["m"]
                 n = record["n"]
-                r = record["r"]
-
-                def describe_node(node):
-                    label = list(node.labels)[0] if node.labels else "Node"
-                    name = node.get("name") or node.get("id") or label
-                    props = ", ".join([f"{k}: {v}" for k, v in node.items() if k not in ["name", "id"] and v is not None])
-                    return f"{label}({name}) [{props}]" if props else f"{label}({name})"
-
+                r1 = record["r1"]
                 m_desc = describe_node(m)
                 n_desc = describe_node(n)
-                rel_type = r.type
-                context_lines.append(f"{m_desc} -[:{rel_type}]- {n_desc}")
+                context_lines.append(f"{m_desc} -[:{r1.type}]- {n_desc}")
 
-            return "\n".join(context_lines) or "Keine Finanzdaten in Neo4j gefunden."
+            # Unternehmen und Beteiligungen verarbeiten
+            for record in result_companies:
+                p = record["p"]
+                c = record["c"]
+                r2 = record["r2"]
+                p_desc = describe_node(p)
+                c_desc = describe_node(c)
+                props = ", ".join([f"{k}: {v}" for k, v in r2.items() if v is not None])
+                context_lines.append(f"{p_desc} -[:{r2.type} {props}]- {c_desc}")
+
+            return "\n".join(context_lines) or "Keine relevanten Daten in Neo4j gefunden."
         except Exception as e:
             logger.error(f"❌ Fehler beim Laden der Neo4j-Daten: {e}")
             st.error(f"Fehler beim Laden der Neo4j-Daten: {e}")
@@ -255,6 +274,7 @@ def generate_response(context: str, user_query: str) -> str:
                 "Du bist ein präziser Assistent für Siemens-Konzern-Analysen. "
                 "Antworte ausschließlich auf Basis der bereitgestellten Daten. "
                 "Nutze keine externen Quellen oder Vorwissen. "
+                "Wenn die Frage nach Anteilsverhältnissen oder Übernahmen fragt, suche nach Beziehungen wie HAS_PARTICIPATION oder HAS_ACQUISITION und gib den sharePercentage an. "
                 "Falls keine passenden Informationen im Kontext vorhanden sind, antworte mit 'Keine ausreichenden Daten gefunden'. "
                 "Antworte klar, präzise und in deutscher Sprache."
             )
@@ -311,9 +331,9 @@ def main():
 
     if send and user_query:
         with st.spinner("⏳ Generiere Antwort..."):
-            graph_context = get_financialmetric_neo4j_context(limit=1000)
-            document_context = retrieve_relevant_chunks(user_query, st.session_state.chunk_embeddings, top_n=3)
-            combined_context = f"Neo4j-Finanzdaten:\n{graph_context}\n\nGeschäftsberichte:\n{document_context}"
+            graph_context = get_neo4j_context(limit=1000)
+            document_context = retrieve_relevant_chunks(user_query, st.session_state.chunk_embeddings, top_n=5)
+            combined_context = f"Neo4j-Daten:\n{graph_context}\n\nGeschäftsberichte:\n{document_context}"
             answer = generate_response(combined_context, user_query)
             st.markdown(f"### ✅ Antwort:\n{answer}")
 
