@@ -127,7 +127,7 @@ def read_folder_data(folder_path: str) -> List[str]:
                 st.warning(f"Fehler beim Lesen der PDF {file_name}: {e}")
     return files_data
 
-def split_text(text: str, max_length: int = 500) -> List[str]:
+def split_text(text: str, max_length: int = 300) -> List[str]:
     """Teilt Text in Chunks mit maximaler Länge."""
     words = text.split()
     chunks = []
@@ -160,7 +160,7 @@ def get_embedding(text: str, model: str = "text-embedding-3-small") -> np.ndarra
         st.error(f"Fehler beim Generieren des Embeddings: {e}")
         return np.zeros(1536)  # Fallback: Nullvektor mit Standardlänge
 
-def create_embeddings_parallel(documents: List[str], max_length: int = 500) -> List[Tuple[str, np.ndarray]]:
+def create_embeddings_parallel(documents: List[str], max_length: int = 300) -> List[Tuple[str, np.ndarray]]:
     """Erstellt Embeddings für Dokumente parallel."""
     chunk_embeddings = []
     chunks = [chunk for doc in documents for chunk in split_text(doc, max_length)]
@@ -193,7 +193,11 @@ def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
         return 0.0
     return np.dot(a, b) / (norm_a * norm_b)
 
-def retrieve_relevant_chunks(query: str, chunk_embeddings: List[Tuple[str, np.ndarray]], top_n: int = 5) -> str:
+def estimate_tokens(text: str) -> int:
+    """Schätzt die Anzahl der Tokens basierend auf der Zeichenlänge."""
+    return len(text) // 4 + 1  # Grobes Maß: 1 Token ≈ 4 Zeichen
+
+def retrieve_relevant_chunks(query: str, chunk_embeddings: List[Tuple[str, np.ndarray]], top_n: int = 2) -> str:
     """Holt die relevantesten Text-Chunks basierend auf der Query."""
     try:
         query_emb = get_embedding(query)
@@ -203,17 +207,27 @@ def retrieve_relevant_chunks(query: str, chunk_embeddings: List[Tuple[str, np.nd
         similarities = [(chunk, cosine_similarity(query_emb, emb)) for chunk, emb in chunk_embeddings]
         similarities.sort(key=lambda x: x[1], reverse=True)
         top_chunks = [chunk for chunk, _ in similarities[:top_n] if chunk]
-        return "\n\n".join(top_chunks) if top_chunks else "Keine relevanten Dokumente gefunden."
+        
+        # Kontext kürzen
+        max_tokens = 4000  # Ziel: ~25% des Token-Limits für Dokumente
+        context = "\n\n".join(top_chunks)
+        if estimate_tokens(context) > max_tokens:
+            context = context[:max(1, int(len(context) * max_tokens / estimate_tokens(context)))]
+            logger.warning("⚠️ Dokumenten-Kontext gekürzt, um Token-Limit einzuhalten")
+        
+        return context if context else "Keine relevanten Dokumente gefunden."
     except Exception as e:
         logger.error(f"❌ Fehler bei der Dokumentensuche: {e}")
         st.error(f"Fehler bei der Dokumentensuche: {e}")
         return "Fehler bei der Dokumentensuche."
 
-def get_neo4j_context(limit: int = 1000) -> str:
+def get_neo4j_context(user_query: str, limit: int = 100) -> str:
     """Holt Kontext aus Neo4j für Finanzmetriken, Unternehmen und Beteiligungen."""
     with driver.session() as session:
         try:
             context_lines = []
+            max_tokens = 8000  # Ziel: ~50% des Token-Limits für Neo4j
+
             # Abfrage für Finanzmetriken
             result_metrics = session.run("""
                 MATCH (m:FinancialMetric)-[r1]-(n)
@@ -223,8 +237,14 @@ def get_neo4j_context(limit: int = 1000) -> str:
             """, limit=limit//2)
 
             # Abfrage für Unternehmen und Beteiligungen
-            result_companies = session.run("""
+            query_lower = user_query.lower()
+            company_filter = ""
+            if "siemens" in query_lower or "tass" in query_lower:
+                company_filter = "WHERE p.name CONTAINS 'Siemens' OR c.name CONTAINS 'TASS'"
+
+            result_companies = session.run(f"""
                 MATCH (p:ParentCompany)-[r2:HAS_PARTICIPATION|HAS_ACQUISITION]->(c:Company)
+                {company_filter}
                 RETURN p, r2, c
                 LIMIT $limit
             """, limit=limit//2)
@@ -244,7 +264,8 @@ def get_neo4j_context(limit: int = 1000) -> str:
                 r1 = record["r1"]
                 m_desc = describe_node(m)
                 n_desc = describe_node(n)
-                context_lines.append(f"{m_desc} -[:{r1.type}]- {n_desc}")
+                line = f"{m_desc} -[:{r1.type}]- {n_desc}"
+                context_lines.append(line)
 
             # Unternehmen und Beteiligungen verarbeiten
             for record in result_companies:
@@ -254,9 +275,17 @@ def get_neo4j_context(limit: int = 1000) -> str:
                 p_desc = describe_node(p)
                 c_desc = describe_node(c)
                 props = ", ".join([f"{k}: {v}" for k, v in r2.items() if v is not None])
-                context_lines.append(f"{p_desc} -[:{r2.type} {props}]- {c_desc}")
+                line = f"{p_desc} -[:{r2.type} {props}]- {c_desc}"
+                context_lines.append(line)
 
-            return "\n".join(context_lines) or "Keine relevanten Daten in Neo4j gefunden."
+            # Kontext kürzen
+            context = "\n".join(context_lines)
+            if estimate_tokens(context) > max_tokens:
+                context_lines = context_lines[:max(1, int(len(context_lines) * max_tokens / estimate_tokens(context)))]
+                context = "\n".join(context_lines)
+                logger.warning("⚠️ Neo4j-Kontext gekürzt, um Token-Limit einzuhalten")
+
+            return context or "Keine relevanten Daten in Neo4j gefunden."
         except Exception as e:
             logger.error(f"❌ Fehler beim Laden der Neo4j-Daten: {e}")
             st.error(f"Fehler beim Laden der Neo4j-Daten: {e}")
@@ -266,6 +295,12 @@ def generate_response(context: str, user_query: str) -> str:
     """Generiert eine Antwort basierend auf dem Kontext und der Benutzerfrage."""
     if not context.strip():
         return "Keine ausreichenden Daten gefunden."
+    
+    # Kontext kürzen, um Token-Limit einzuhalten
+    max_tokens = 12000  # Ziel: ~75% des Token-Limits für gesamten Kontext
+    if estimate_tokens(context) > max_tokens:
+        context = context[:max(1, int(len(context) * max_tokens / estimate_tokens(context)))]
+        logger.warning("⚠️ Gesamter Kontext gekürzt, um Token-Limit einzuhalten")
     
     messages = [
         {
@@ -319,7 +354,7 @@ def main():
     # Embeddings erstellen
     if "chunk_embeddings" not in st.session_state:
         with st.spinner("🔄 Erstelle Embeddings..."):
-            st.session_state.chunk_embeddings = create_embeddings_parallel(st.session_state.documents, max_length=500)
+            st.session_state.chunk_embeddings = create_embeddings_parallel(st.session_state.documents, max_length=300)
             if not st.session_state.chunk_embeddings:
                 st.warning("⚠️ Keine Embeddings erstellt. Bitte überprüfe die Dokumente.")
                 st.stop()
@@ -331,8 +366,8 @@ def main():
 
     if send and user_query:
         with st.spinner("⏳ Generiere Antwort..."):
-            graph_context = get_neo4j_context(limit=1000)
-            document_context = retrieve_relevant_chunks(user_query, st.session_state.chunk_embeddings, top_n=5)
+            graph_context = get_neo4j_context(user_query, limit=100)
+            document_context = retrieve_relevant_chunks(user_query, st.session_state.chunk_embeddings, top_n=2)
             combined_context = f"Neo4j-Daten:\n{graph_context}\n\nGeschäftsberichte:\n{document_context}"
             answer = generate_response(combined_context, user_query)
             st.markdown(f"### ✅ Antwort:\n{answer}")
